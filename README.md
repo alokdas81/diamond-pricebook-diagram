@@ -284,7 +284,7 @@ J --> K
 - Price chart
 
 ![70/79 Series Image](images/glynn_jhonson/price_list.png)
-- **Optional Params:**
+- **Adon Params:**
 
 ```mermaid
 graph TB
@@ -325,7 +325,7 @@ G --> K
 ```
 - Adon price chart
 
-![70/79 Series Options Image](images/glynn_jhonson/option_price_list.png)
+![70/79 Series Options Image](images/glynn_jhonson/adon_price_list.png)
 
 
 - Parts selection criteria
