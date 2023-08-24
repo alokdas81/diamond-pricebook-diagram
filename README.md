@@ -181,16 +181,17 @@ graph TB
 
 subgraph Function Selection
 D[Possible Options]
-E[Hold-Open]
-F[Stop-Only]
-H[etc.]
+E[Hold-Open/H]
+F[Stop-Only/S]
+H[FRICTION STOP-ONLY/F]
+K[INTERNAL HOLD-OPEN/HP]
 end
 
 subgraph Model Selection
 A[Possible Options]
 B[heavy-duty]
 C[extra heavy-duty]
-I[etc.]
+I[medium-duty]
 end
 
 subgraph Series Selection
@@ -209,6 +210,7 @@ A --> I
 D --> E
 D --> F
 D --> H
+D --> K
 
 G --> 70
 G --> 79
