@@ -329,7 +329,7 @@ G --> K
 flowchart TD
 
 A[Start] --> B[Series = 70] --> C[Model = heavy-duty]
-C --> D[BHMA Finish = 605] --> E[US Number = US3] --> F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
+C --> D[BHMA Finish = 605] --> E[US Number = US3] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
 - Different part's Price chart
 
