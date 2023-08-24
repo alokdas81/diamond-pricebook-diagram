@@ -189,9 +189,10 @@ end
 
 subgraph Model Selection
 A[Possible Options]
-B[heavy-duty]
-C[extra heavy-duty]
-I[medium-duty]
+B[70 series heavy-duty]
+C[79 series extra heavy-duty]
+I[450 series medium-duty]
+L[etc.]
 end
 
 subgraph Series Selection
@@ -206,6 +207,7 @@ end
 A --> B
 A --> C
 A --> I
+A --> L
 
 D --> E
 D --> F
@@ -330,8 +332,8 @@ G --> K
 ```mermaid
 flowchart TD
 
-A[Start] --> B[Series = 70] --> C[Model = heavy-duty]
-C --> D[BHMA Finish = 605] --> E[US Number = US3] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
+A[Start] --> B[Model = 70 series heavy-duty]
+ --> D[BHMA Finish = 605] --> E[US Number = US3] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
 - Different part's Price chart
 
