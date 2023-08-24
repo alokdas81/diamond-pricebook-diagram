@@ -278,6 +278,7 @@ J --> K
 ```
 
 - Price chart
+
 ![70/79 Series Image](images/glynn_jhonson/price_list.png)
 - **Optional Params:**
 
@@ -319,10 +320,11 @@ G --> J
 G --> K
 ```
 - Adon price chart
+
 ![70/79 Series Options Image](images/glynn_jhonson/option_price_list.png)
 
 
-- Parts selection
+- Parts selection criteria
 ```mermaid
 flowchart TD
 
@@ -330,5 +332,6 @@ A[Start] --> B[Series = 70] --> C[Model = heavy-duty]
 C --> D[BHMA Finish = 605] --> E[US Number = US3] --> F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
 - Different part's Price chart
+
 ![70 Series Parts Image-1](images/glynn_jhonson/part_price1.png)
 ![70 Series Part Image-2](images/glynn_jhonson/part_price2.png)
