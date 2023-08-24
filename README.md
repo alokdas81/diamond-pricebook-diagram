@@ -183,12 +183,14 @@ subgraph Function Selection
 D[Possible Options]
 E[Hold-Open]
 F[Stop-Only]
+H[etc.]
 end
 
 subgraph Model Selection
 A[Possible Options]
 B[heavy-duty]
 C[extra heavy-duty]
+I[etc.]
 end
 
 subgraph Series Selection
@@ -197,18 +199,22 @@ G[Possible Options]
 79
 81
 100
+J[etc.]
 end
 
 A --> B
 A --> C
+A --> I
 
 D --> E
 D --> F
+D --> H
 
 G --> 70
 G --> 79
 G --> 81
 G --> 100
+G --> J
 
 ```
 ```mermaid
@@ -243,6 +249,7 @@ G[Possible Options]
 4
 5
 6
+L[etc.]
 end
 
 G --> 2
@@ -250,6 +257,7 @@ G --> 3
 G --> 4
 G --> 5
 G --> 6
+G --> L
 
 H --> 605
 H --> 606
@@ -296,12 +304,14 @@ B[J]
 C[SNB-1]
 D[SNB-2]
 E[SOC]
+L[etc.]
 end
 
 A --> B
 A --> C
 A --> D
 A --> E
+A --> L
 
 G --> H
 G --> I
@@ -316,8 +326,8 @@ G --> K
 ```mermaid
 flowchart TD
 
-A[Start] --> B[Series == 70] --> C[Model == heavy-duty]
-C --> D[BHMA Finish == 605] --> E[US Number == US3] --> F[Possible parts are marked in red color in the following figure]
+A[Start] --> B[Series = 70] --> C[Model = heavy-duty]
+C --> D[BHMA Finish = 605] --> E[US Number = US3] --> F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
 - Different part's Price chart
 ![70 Series Parts Image-1](images/glynn_jhonson/part_price1.png)
