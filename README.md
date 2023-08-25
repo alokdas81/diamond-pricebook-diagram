@@ -283,7 +283,7 @@ J --> K
 
 - Price chart
 
-![70/79 Series Image](images/glynn_jhonson/price_list.png)
+![70/79 Series price Image](images/glynn_jhonson/price_list.png)
 - **Adon Params:**
 
 ```mermaid
@@ -339,3 +339,299 @@ A[Start] --> B[Model = 70 series heavy-duty]
 
 ![70 Series Parts Image-1](images/glynn_jhonson/part_price1.png)
 ![70 Series Part Image-2](images/glynn_jhonson/part_price2.png)
+
+#### Falcon (`CAN110065_FAL_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):
+
+- **Product dependent Required Params:**
+
+```mermaid
+flowchart TD
+
+
+subgraph Series Selection
+G[Possible Options]
+MA
+T
+X
+D200
+J[etc.]
+end
+
+subgraph Product Category Selection
+A[Possible Options]
+B[Mortis Lock]
+C[Deadbolt Lock]
+D[EXit Device]
+E[Mullion]
+F[etc.]
+end
+
+A --> B
+A --> C
+A --> D
+A --> E
+A --> F
+
+G --> MA
+G --> T
+G --> X
+G --> D200
+G --> J
+
+```
+```mermaid
+flowchart TD
+
+
+subgraph Cylinder Selection
+D[Possible Options]
+P
+P6
+P7
+G6
+BB6
+K[etc.]
+end
+
+subgraph Series + Function Selection
+A[Possible Options]
+B[MA101]
+C[MA161]
+I[MA521]
+L[etc.]
+end
+
+A --> B
+A --> C
+A --> I
+A --> L
+
+D --> P
+D --> P6
+D --> P7
+D --> G6
+D --> BB6
+D --> K
+
+```
+```mermaid
+graph TB
+
+subgraph Rose/Escutcheon-outside style/design Selection
+A[Possible Options]
+LLL
+GALA
+B[etc.]
+end
+
+subgraph Lever-outside finish Selection
+H[Possible Options]
+605
+606
+613
+619
+622
+625
+I[etc.]
+end
+
+subgraph Lever-outside style/design Selection
+J[Possible Options]
+AG
+LTG
+AN
+LTN
+QG
+QN
+K[etc.]
+end
+
+
+
+H --> 605
+H --> 606
+H --> 613
+H --> 619
+H --> 622
+H --> 625
+H --> I
+
+J --> AG
+J --> LTG
+J --> AN
+J --> LTN
+J --> QG
+J --> QN
+J --> K
+
+A --> LLL
+A --> GALA
+A --> B
+```
+
+- Price chart
+
+![MA Series price Image](images/falcon/price_list.png)
+
+
+```mermaid
+flowchart TD
+
+subgraph Rose/Escutcheon-inside style/design Selection
+A[Possible Options]
+LLL
+GALA
+B[etc.]
+end
+
+subgraph Lever-inside finish Selection
+H[Possible Options]
+605
+606
+613
+619
+622
+625
+I[etc.]
+end
+
+subgraph Lever-inside style/design Selection
+J[Possible Options]
+AG
+LTG
+AN
+LTN
+QG
+QN
+K[etc.]
+end
+
+
+H --> 605
+H --> 606
+H --> 613
+H --> 619
+H --> 622
+H --> 625
+H --> I
+
+J --> AG
+J --> LTG
+J --> AN
+J --> LTN
+J --> QG
+J --> QN
+J --> K
+
+A --> LLL
+A --> GALA
+A --> B
+```
+
+```mermaid
+graph TB
+
+
+subgraph Armor front Selection
+N[Possible Options]
+O[S77801-LL]
+P[S77804-LL]
+Q[S77805-LL]
+R[LLL-Less armor front]
+S[etc.]
+end
+
+
+subgraph Latch Selection
+D[Possible Options]
+E[23981137]
+F[24074387]
+G[23981160]
+H[43-005]
+I[98535]
+J[LLL-Less Latch]
+K[etc.]
+end
+
+subgraph Strike Selection
+A[Possible Options]
+A8737-1
+A8737-2
+A8737-3
+A8737-4
+5185
+5185-4
+C[LLL-Less Strike]
+B[etc.]
+end
+
+subgraph Handling Selection
+L[Possible Options]
+RH[Right hand/RH]
+LH[Left hand/LH]
+LR[Left hand reverse/LR]
+RR[Righ hand reverse/RR]
+M[etc.]
+end
+
+N --> O
+N --> P
+N --> Q
+N --> R
+N --> S
+
+D --> E
+D --> F
+D --> G
+D --> H
+D --> I
+D --> J
+D --> K
+
+L --> RH
+L --> LH
+L --> LR
+L --> RR
+L --> M
+
+A --> A8737-1
+A --> A8737-2
+A --> A8737-3
+A --> A8737-4
+A --> 5185
+A --> 5185-4
+A --> C
+A --> B
+```
+```mermaid
+flowchart TD
+
+subgraph Door Dimensions
+A[Door Thikness]
+Extended
+end
+```
+- Less component price list:
+
+![T Series less component price Image](images/falcon/less_component_price_list.png)
+- **Adon Params:**
+```mermaid
+flowchart TD
+
+A[Latch Extension]
+B[Box for ANSI strike]
+C[Pack Cylinders loose]
+D[Screw option]
+E[Lead lining]
+P[Possible Options]
+A --> P 
+B --> P 
+C --> P 
+D --> P 
+E --> P
+P --> Y[yes] 
+P --> N[No] 
+```
+- Adon price list:
+
+![T Series optional price Image](images/falcon/adon_price_list.png)
