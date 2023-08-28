@@ -778,6 +778,28 @@ end
   ```mermaid
   graph TB
 
+  subgraph Dogging Selection
+  G[Possible Options]
+  G --> H[LD: Less Dogging]
+  G --> I[CD: Cylinder Dogging]
+  end
+
+  subgraph Rods for surface/concealed Selection
+  D[Possible Options]
+  D --> E[LBR: Less Bottom Rod]
+  D --> F[LBR-AFL: Less Bottom Rod w/Auxiliary Fire Pin]
+  end
+
+  subgraph Mortise lock Selection
+  A[Possible Options]
+  A --> B[LL: Less Lock]
+  A --> C[8500: Standard Mortise]
+  end
+  ```
+  
+  ```mermaid
+  graph TB
+
   subgraph Storm rating Selection
   T[Possible Options]
   T --> U[HH: Wind and Impact - Hurricane Rated]
@@ -802,32 +824,8 @@ end
   J --> M[DM-RX: Latchbolt and Dual Pushbar Monitor]
   J --> N[KOR: Key Bypass Switch]
   end
-
-  subgraph Dogging Selection
-  G[Possible Options]
-  G --> H[LD: Less Dogging]
-  G --> I[CD: Cylinder Dogging]
-  end
-
-  subgraph Dogging Selection
-  G[Possible Options]
-  G --> H[LD: Less Dogging]
-  G --> I[CD: Cylinder Dogging]
-  end
-
-  subgraph Rods for surface/concealed Selection
-  D[Possible Options]
-  D --> E[LBR: Less Bottom Rod]
-  D --> F[LBR-AFL: Less Bottom Rod w/Auxiliary Fire Pin]
-  end
-
-  subgraph Mortise lock Selection
-  A[Possible Options]
-  A --> B[LL: Less Lock]
-  A --> C[8500: Standard Mortise]
-  end
   ```
-  
+
   ```mermaid
   graph TB
 
