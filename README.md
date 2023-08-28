@@ -248,7 +248,7 @@ H --> I
 
 ```
 
-- Price chart
+- **Base Price chart:**
 
 ![70/79 Series price Image](images/Allegion/glynn_jhonson/price_list.png)
 - **Adon Params:**
@@ -290,7 +290,7 @@ G --> I
 G --> J
 G --> K
 ```
-- Adon price chart
+- **Adon price chart:**
 
 ![70/79 Series Options Image](images/Allegion/glynn_jhonson/adon_price_list.png)
 
@@ -302,7 +302,7 @@ flowchart TD
 A[Start] --> B[Model = 70 series heavy-duty]
  --> D[Finish = 605] --> E[US Number = US3] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
-- Different part's Price chart
+- **Different part's Price chart:**
 
 ![70 Series Parts Image-1](images/Allegion/glynn_jhonson/part_price1.png)
 ![70 Series Part Image-2](images/Allegion/glynn_jhonson/part_price2.png)
@@ -434,7 +434,7 @@ A --> GALA
 A --> B
 ```
 
-- Price chart
+- **Base Price chart:**
 
 ![MA Series price Image](images/Allegion/falcon/price_list.png)
 
@@ -576,7 +576,7 @@ A[Door Thikness]
 Extended
 end
 ```
-- Less component price list:
+- **Less component price list:**
 
 ![T Series less component price Image](images/Allegion/falcon/less_component_price_list.png)
 - **Adon Params:**
@@ -621,7 +621,7 @@ A[Lever-outside design = Avalon-Lever/AG/AN] --> B[Lead lining = 9A] --> C[Price
 end
 
 ```
-- Adon price list:
+- **Adon price list:**
 
 ![T Series optional price Image](images/Allegion/falcon/adon_price_list.png)
 
@@ -668,20 +668,6 @@ end
 graph TB
 
 
-subgraph Device Trim Design Type Selection
-O[Possible Options] --> P[Standard Lever]
-O --> Q[Knurled Lever]
-end
-
-subgraph Device Trim Selection
-H[Possible Options] --> I[510L/Lever trim]
-H --> J[511L/Vanda-resistant lever trim]
-H --> K[L/Less trim]
-H --> L[512/Pull trim]
-H --> M[513K/Knob trim]
-H --> N[717/Delta trim]
-end
-
 
 subgraph Device Handing Selection
 E[Possible Options] --> F[Right hand reverse/RHR]
@@ -696,33 +682,73 @@ A --> D[4': 4' Device for 2'10'' to 4' Door]
 end
 
 ```
-```mermaid
-graph TB
+- **Base price chart:**
+
+![25 Series Base price Image](images/Allegion/falcon/exit_device_base_price.png)
+- **Optional Params:**
+  ```mermaid
+  graph TB
 
 
-subgraph Device Finish Selection
-K[Possible Options]
-K --> 605
-K --> 606
-K --> 629
-K --> 695
-K --> 710
-K --> R[etc.]
-end
+  subgraph Device Trim Finish Selection
+  K[Possible Options]
+  K --> 605
+  K --> 606
+  K --> 629
+  K --> 695
+  K --> 710
+  K --> R[etc.]
+  end
 
-subgraph Device Trim Design Selection
-A[Possible Options] --> B[Avalon/AVA]
-A --> C[Broadway/BRW]
-A --> D[Boardwalk/BRK]
-A --> E[Dane/DAN]
-A --> F[Sutro/SUT]
-A --> G[Danish/DSH]
-A --> H[Latitude/LAT]
-A --> I[Longitude/LON]
-A --> J[Quantum/QUA]
-end
-```
+  subgraph Device Trim Design Selection
+  A[Possible Options] --> B[Avalon/AVA]
+  A --> C[Broadway/BRW]
+  A --> D[Boardwalk/BRK]
+  A --> E[Dane/DAN]
+  A --> F[Sutro/SUT]
+  A --> G[Danish/DSH]
+  A --> H[Latitude/LAT]
+  A --> I[Longitude/LON]
+  A --> J[Quantum/QUA]
+  end
 
+  subgraph Device Trim Design Type Selection
+  O[Possible Options] --> P[Standard Lever]
+  O --> Q[Knurled Lever]
+  end
+
+  subgraph Device Trim Selection
+  S[Possible Options] --> T[510L/Lever trim]
+  S --> U[511L/Vanda-resistant lever trim]
+  S --> V[L/Less trim]
+  S --> W[512/Pull trim]
+  S --> X[513K/Knob trim]
+  S --> Y[717/Delta trim]
+  end
+
+  ```
+  **Trim price chart:**
+
+  ![25 Series trim price Image1](images/Allegion/falcon/optional_trim_price_1.png)
+  ![25 Series trim price Image2](images/Allegion/falcon/optional_trim_price_2.png)
+
+    ```mermaid
+    flowchart TD
+
+
+    subgraph Device Strike Selection
+    A[Possible Options]
+    A --> 264
+    A --> 299
+    A --> 3788
+    A --> 2130
+    A --> 1279
+    A --> R[etc.]
+    end
+  ```
+  **Strike price chart:**
+
+  ![25 Series strike price Image](images/Allegion/falcon/optional_strike_price.png)
 
 
 
