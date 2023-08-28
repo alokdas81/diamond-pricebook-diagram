@@ -623,7 +623,12 @@ end
 ```
 - **Adon price list:**
 
-![T Series optional price Image](images/Allegion/falcon/adon_price_list.png)
+  ![T Series optional price Image](images/Allegion/falcon/adon_price_list.png)
+
+  Optinal Params indicator
+  
+  ![MA Series optional indicators price Image](images/Allegion/falcon/optional_params_indicator.png)
+
 
 **2. Exit Devices:**
 - **Product dependent Required Params:**
@@ -750,7 +755,128 @@ end
 
   ![25 Series strike price Image](images/Allegion/falcon/optional_strike_price.png)
 
+  
 
+  ```mermaid
+    flowchart TD
+
+    A[Accessible]
+    B[Exit Alarm]
+    C[Sexbolts]
+    D[SLM Blocking]
+    E[GBK/Shim Kit/Risers]
+    P[Possible Options]
+    A --> P 
+    B --> P 
+    C --> P 
+    D --> P 
+    E --> P
+    P --> Y[yes] 
+    P --> N[No] 
+  ```
+  
+  ```mermaid
+  graph TB
+
+  subgraph Storm rating Selection
+  T[Possible Options]
+  T --> U[HH: Wind and Impact - Hurricane Rated]
+  end
+
+  subgraph Electrical locking Selection
+  Q[Possible Options]
+  Q --> R[FSA: Fail Safe]
+  Q --> S[FSE: Fail Secure]
+  end
+
+
+  subgraph Latch Retraction Selection
+  O[Possible Options]
+  O --> P[MEL: Motorized Electric Latch Retraction]
+  end
+
+  subgraph Switch Selection
+  J[Possible Options]
+  J --> K[RX: Request to Exit Pushbar Monitor]
+  J --> L[DM: Latchbolt and Pushbar Monitor]
+  J --> M[DM-RX: Latchbolt and Dual Pushbar Monitor]
+  J --> N[KOR: Key Bypass Switch]
+  end
+
+  subgraph Dogging Selection
+  G[Possible Options]
+  G --> H[LD: Less Dogging]
+  G --> I[CD: Cylinder Dogging]
+  end
+
+  subgraph Dogging Selection
+  G[Possible Options]
+  G --> H[LD: Less Dogging]
+  G --> I[CD: Cylinder Dogging]
+  end
+
+  subgraph Rods for surface/concealed Selection
+  D[Possible Options]
+  D --> E[LBR: Less Bottom Rod]
+  D --> F[LBR-AFL: Less Bottom Rod w/Auxiliary Fire Pin]
+  end
+
+  subgraph Mortise lock Selection
+  A[Possible Options]
+  A --> B[LL: Less Lock]
+  A --> C[8500: Standard Mortise]
+  end
+  ```
+  
+  ```mermaid
+  graph TB
+
+  subgraph Center line Selection
+  T[Possible Options]
+  T --> U[40'']
+  T --> V[40-1/4'']
+  T --> W[40-5/16'']
+  T --> X[40-9/16'']
+  T --> Y[34-1/16'']
+  T --> Z[etc.]
+  end
+  
+  
+  subgraph Door Thickness Selection
+  O[Possible Options]
+  O --> P[DT1-3/4: 1-3/'']
+  O --> Q[DT2: 2'' thickness]
+  O --> R[DT2-1/4: 2-1/4'']
+  end
+
+
+  subgraph Door Mode Material Selection
+  K[Possible Options]
+  K --> L[DE: Double egress doors]
+  K --> M[PR: Pair of doors]
+  K --> N[SGL: Single door]
+  end
+
+  
+  subgraph Frame Material Selection
+  G[Possible Options]
+  G --> H[ALF: Aluminum frame]
+  G --> I[HMF: Hollow metal frame]
+  G --> J[WDF: Wood door frame]
+  end
+
+  subgraph Door Material Selection
+  A[Possible Options]
+  A --> B[ALD: Aluminum door]
+  A --> C[CPD: Composite door]
+  A --> D[HMD: Hollow metal door]
+  A --> E[WDF: Wood door frame]
+  A --> F[SCDC: Steel channel door construction]
+  end
+  ```
+
+  ![25 Series optional price Image1](images/Allegion/falcon/optional_price_list_1.png)
+  ![25 Series optional price Image2](images/Allegion/falcon/optional_price_list_2.png)
 
 ```mermaid
 flowchart TD
