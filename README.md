@@ -367,7 +367,6 @@ F[etc.]
 end
 
 A --> B
-A --> C
 A --> D
 A --> E
 A --> F
