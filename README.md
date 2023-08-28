@@ -876,16 +876,5 @@ end
   ![25 Series optional price Image1](images/Allegion/falcon/optional_price_list_1.png)
   ![25 Series optional price Image2](images/Allegion/falcon/optional_price_list_2.png)
 
-```mermaid
-flowchart TD
-
-
-subgraph Exit-devices
-A[work in progress...]
-end
-
-
-```
-
 
 
