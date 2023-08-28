@@ -14,7 +14,7 @@ Proposed Structure for storing the pricebook information.
       "code": "10",
       "features": [
         {
-          "desc": "bhma finish",
+          "desc": "bhma Number/US Number",
           "code": "finish",
           "options": [
             {
@@ -31,25 +31,6 @@ Proposed Structure for storing the pricebook information.
             }
           ],
           "dependentFetures": [],
-        },
-        {
-          "desc": "US Number",
-          "code": "USN",
-          "options": [
-            {
-              "desc": "US3",
-              "code": "US3",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            },
-            {
-              "desc": "US4",
-              "code": "US4",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            }
-          ],
-          "dependentFetures": []
         },
         {
           "desc": "size",
@@ -171,6 +152,8 @@ The above structure has been generated depending on the following files.
 Manufaturer wise PDF and their corresponding paramiter list.
 
 ## **B.1 Allegion:**
+- Need to follow the common coding format for some parameters.
+![finish code list](./images/Allegion/finish_codes.png)
 #### **B.1.a Glynn Jhonson (`GJ_Price_Book_12_Feb2023_CAN010061.pdf`):**
 
 - **Required Params:**
@@ -224,7 +207,7 @@ G --> J
 ```mermaid
 graph TB
 
-subgraph BHMA Finish Selection
+subgraph Finish Selection
 H[Possible Options]
 605
 606
@@ -234,16 +217,6 @@ H[Possible Options]
 622
 625
 I[etc.]
-end
-
-subgraph US Number Selection
-J[Possible Options]
-US3
-US4
-US10
-US10B
-US15
-K[etc.]
 end
 
 subgraph Size Selection
@@ -283,7 +256,7 @@ J --> K
 
 - Price chart
 
-![70/79 Series price Image](images/glynn_jhonson/price_list.png)
+![70/79 Series price Image](images/Allegion/glynn_jhonson/price_list.png)
 - **Adon Params:**
 
 ```mermaid
@@ -325,7 +298,7 @@ G --> K
 ```
 - Adon price chart
 
-![70/79 Series Options Image](images/glynn_jhonson/adon_price_list.png)
+![70/79 Series Options Image](images/Allegion/glynn_jhonson/adon_price_list.png)
 
 
 - Parts selection criteria
@@ -333,12 +306,12 @@ G --> K
 flowchart TD
 
 A[Start] --> B[Model = 70 series heavy-duty]
- --> D[BHMA Finish = 605] --> E[US Number = US3] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
+ --> D[Finish = 605] --> E[US Number = US3] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
 - Different part's Price chart
 
-![70 Series Parts Image-1](images/glynn_jhonson/part_price1.png)
-![70 Series Part Image-2](images/glynn_jhonson/part_price2.png)
+![70 Series Parts Image-1](images/Allegion/glynn_jhonson/part_price1.png)
+![70 Series Part Image-2](images/Allegion/glynn_jhonson/part_price2.png)
 
 #### **B.1.b Falcon (`CAN110065_FAL_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
 
@@ -611,7 +584,7 @@ end
 ```
 - Less component price list:
 
-![T Series less component price Image](images/falcon/less_component_price_list.png)
+![T Series less component price Image](images/Allegion/falcon/less_component_price_list.png)
 - **Adon Params:**
 ```mermaid
 flowchart TD
@@ -656,10 +629,109 @@ end
 ```
 - Adon price list:
 
-![T Series optional price Image](images/falcon/adon_price_list.png)
+![T Series optional price Image](images/Allegion/falcon/adon_price_list.png)
 
 **2. Exit Devices:**
 - **Product dependent Required Params:**
+```mermaid
+graph TB
+
+subgraph Device Finish Selection
+Q[Possible Options]
+Q --> 605
+Q --> 606
+Q --> 612
+Q --> 619
+Q --> 622
+Q --> 625
+Q --> R[etc.]
+end
+
+subgraph Rating selection
+N[Possible Options] --> O[Panic exit device/ - / None]
+N --> P[Fire exit device/F]
+end
+
+subgraph Function selection
+G[Possible Options] --> H[Dummy Trim/DT]
+G --> I[Lever dummy Trim/LDT]
+G --> J[Knob dummy Trim/KDT]
+G --> K[Exit Only/EO]
+G --> L[Knob Night Latch/KNL]
+G --> M[etc.]
+end
+
+subgraph Device-type selection
+A[Prossible-Options] --> B[Rim device/R]
+A --> C[Surface vertical rod/V]
+A --> D[Mortise Lock/M]
+A --> E[ Concealed vertical rod/C]
+A --> F[Wood Door concealed vertical rod/CWDC]
+end
+
+```
+```mermaid
+graph TB
+
+
+subgraph Device Trim Design Type Selection
+O[Possible Options] --> P[Standard Lever]
+O --> Q[Knurled Lever]
+end
+
+subgraph Device Trim Selection
+H[Possible Options] --> I[510L/Lever trim]
+H --> J[511L/Vanda-resistant lever trim]
+H --> K[L/Less trim]
+H --> L[512/Pull trim]
+H --> M[513K/Knob trim]
+H --> N[717/Delta trim]
+end
+
+
+subgraph Device Handing Selection
+E[Possible Options] --> F[Right hand reverse/RHR]
+E --> G[Left hand reverse/LHR]
+end
+
+subgraph Device size Selection
+A[Possible Options]
+A --> B[2': 2' Device for 2' Door]
+A --> C[3': 3' Device for 2'4'' to 3' Door]
+A --> D[4': 4' Device for 2'10'' to 4' Door]
+end
+
+```
+```mermaid
+graph TB
+
+
+subgraph Device Finish Selection
+K[Possible Options]
+K --> 605
+K --> 606
+K --> 629
+K --> 695
+K --> 710
+K --> R[etc.]
+end
+
+subgraph Device Trim Design Selection
+A[Possible Options] --> B[Avalon/AVA]
+A --> C[Broadway/BRW]
+A --> D[Boardwalk/BRK]
+A --> E[Dane/DAN]
+A --> F[Sutro/SUT]
+A --> G[Danish/DSH]
+A --> H[Latitude/LAT]
+A --> I[Longitude/LON]
+A --> J[Quantum/QUA]
+end
+```
+
+
+
+
 ```mermaid
 flowchart TD
 
@@ -670,5 +742,6 @@ end
 
 
 ```
+
 
 
