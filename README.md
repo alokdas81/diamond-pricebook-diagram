@@ -632,11 +632,7 @@ E --> P
 P --> Y[yes] 
 P --> N[No] 
 ```
-- Adon price list:
-
-![T Series optional price Image](images/falcon/adon_price_list.png)
-
-- From the above list we can see that the `Lead lining` depends on the `Lever-outside design` of lever.
+`Lead lining` depends on the `Lever-outside design`.
 ```mermaid
 flowchart TD
 
@@ -660,4 +656,8 @@ A[Lever-outside design = Avalon-Lever/AG/AN] --> B[Lead lining = 9A] --> C[Price
 end
 
 ```
+- Adon price list:
+
+![T Series optional price Image](images/falcon/adon_price_list.png)
+
 
