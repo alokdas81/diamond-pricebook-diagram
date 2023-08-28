@@ -635,3 +635,29 @@ P --> N[No]
 - Adon price list:
 
 ![T Series optional price Image](images/falcon/adon_price_list.png)
+
+- From the above list we can see that the `Lead lining` depends on the `Lever-outside design` of lever.
+```mermaid
+flowchart TD
+
+P[Lever-outside design = AG/AN/DG/DN/QG/QN]
+-->  |Yes| Q[Possible Options] 
+Q --> Case-1
+Q --> Case-2
+Q --> Case-3
+P --> |No| N[Not Applicable]
+subgraph Case-3
+G[Lever-outside design = Quantum-Lever/QG/QN] --> H[Lead lining = 9Q] --> I[Price = $359.0/lever]
+end
+
+subgraph Case-2
+D[Lever-outside design = Dane-Lever/DG/DN] --> E[Lead lining = 9D] --> F[Price = $359.0/lever]
+end
+
+
+subgraph Case-1
+A[Lever-outside design = Avalon-Lever/AG/AN] --> B[Lead lining = 9A] --> C[Price = $359.0/lever]
+end
+
+```
+
