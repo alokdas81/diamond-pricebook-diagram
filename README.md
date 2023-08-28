@@ -436,7 +436,7 @@ A --> B
 
 - Price chart
 
-![MA Series price Image](images/falcon/price_list.png)
+![MA Series price Image](images/Allegion/falcon/price_list.png)
 
 
 ```mermaid
