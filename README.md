@@ -342,12 +342,29 @@ A[Start] --> B[Model = 70 series heavy-duty]
 
 #### **B.1.b Falcon (`CAN110065_FAL_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
 
+```mermaid
+flowchart TD
+
+
+subgraph Product Category Selection
+A[Possible Options]
+B[Locks]
+D[EXit Devices]
+E[Electronics]
+F[etc.]
+end
+
+
+A --> B
+A --> D
+A --> E
+A --> F
+```
 **1. Locks:**
 - **Product dependent Required Params:**
 
 ```mermaid
 flowchart TD
-
 
 subgraph Series Selection
 G[Possible Options]
@@ -358,29 +375,11 @@ D200
 J[etc.]
 end
 
-subgraph Product Category Selection
-A[Possible Options]
-B[Locks]
-D[EXit Devices]
-E[Electronics]
-F[etc.]
-end
-
-A --> B
-A --> D
-A --> E
-A --> F
-
 G --> MA
 G --> T
 G --> X
 G --> D200
 G --> J
-
-```
-```mermaid
-flowchart TD
-
 
 subgraph Cylinder Selection
 D[Possible Options]
