@@ -14,7 +14,7 @@ Proposed Structure for storing the pricebook information.
       "code": "10",
       "features": [
         {
-          "desc": "bhma Number/US Number",
+          "desc": "bhma Number/US Number of finish",
           "code": "finish",
           "options": [
             {
@@ -246,12 +246,6 @@ H --> 622
 H --> 625
 H --> I
 
-J --> US3
-J --> US4
-J --> US10
-J --> US10B
-J --> US15
-J --> K
 ```
 
 - Price chart
