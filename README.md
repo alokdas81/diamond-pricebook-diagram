@@ -167,11 +167,11 @@ The above structure has been generated depending on the following files.
 
 
 
-# B. Different paramiter list:
+# **B. Different paramiter list:**
 Manufaturer wise PDF and their corresponding paramiter list.
 
-## B.1 Allegion:
-#### Glynn Jhonson (`GJ_Price_Book_12_Feb2023_CAN010061.pdf`):
+## **B.1 Allegion:**
+#### **B.1.a Glynn Jhonson (`GJ_Price_Book_12_Feb2023_CAN010061.pdf`):**
 
 - **Required Params:**
 
@@ -340,8 +340,9 @@ A[Start] --> B[Model = 70 series heavy-duty]
 ![70 Series Parts Image-1](images/glynn_jhonson/part_price1.png)
 ![70 Series Part Image-2](images/glynn_jhonson/part_price2.png)
 
-#### Falcon (`CAN110065_FAL_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):
+#### **B.1.b Falcon (`CAN110065_FAL_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
 
+**1. Locks:**
 - **Product dependent Required Params:**
 
 ```mermaid
@@ -359,10 +360,9 @@ end
 
 subgraph Product Category Selection
 A[Possible Options]
-B[Mortis Lock]
-C[Deadbolt Lock]
-D[EXit Device]
-E[Mullion]
+B[Locks]
+D[EXit Devices]
+E[Electronics]
 F[etc.]
 end
 
@@ -659,5 +659,18 @@ end
 - Adon price list:
 
 ![T Series optional price Image](images/falcon/adon_price_list.png)
+
+**2. Exit Devices:**
+- **Product dependent Required Params:**
+```mermaid
+flowchart TD
+
+
+subgraph Exit-devices
+A[work in progress...]
+end
+
+
+```
 
 
