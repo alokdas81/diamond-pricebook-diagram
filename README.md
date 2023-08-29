@@ -156,7 +156,27 @@ Manufaturer wise PDF and their corresponding paramiter list.
 ![finish code list](./images/Allegion/finish_codes.png)
 #### **B.1.a Glynn Jhonson (`GJ_Price_Book_12_Feb2023_CAN010061.pdf`):**
 
-- **Required Params:**
+```mermaid
+flowchart TD
+
+subgraph Series Selection
+G[Possible Options]
+70
+79
+81
+100
+J[etc.]
+end
+
+
+G --> 70
+G --> 79
+G --> 81
+G --> 100
+G --> J
+```
+
+- **Product dependent Required Params:**
 
 ```mermaid
 graph TB
@@ -178,14 +198,6 @@ I[450 series medium-duty]
 L[etc.]
 end
 
-subgraph Series Selection
-G[Possible Options]
-70
-79
-81
-100
-J[etc.]
-end
 
 A --> B
 A --> C
@@ -197,11 +209,6 @@ D --> F
 D --> H
 D --> K
 
-G --> 70
-G --> 79
-G --> 81
-G --> 100
-G --> J
 
 ```
 ```mermaid
@@ -251,7 +258,7 @@ H --> I
 - **Base Price chart:**
 
 ![70/79 Series price Image](images/Allegion/glynn_jhonson/price_list.png)
-- **Adon Params:**
+- **Optional Params:**
 
 ```mermaid
 graph TB
@@ -290,7 +297,7 @@ G --> I
 G --> J
 G --> K
 ```
-- **Adon price chart:**
+- **Optional price chart:**
 
 ![70/79 Series Options Image](images/Allegion/glynn_jhonson/adon_price_list.png)
 
@@ -569,7 +576,7 @@ end
 - **Less component price list:**
 
 ![T Series less component price Image](images/Allegion/falcon/less_component_price_list.png)
-- **Adon Params:**
+- **Optional Params:**
 ```mermaid
 flowchart TD
 
@@ -611,7 +618,7 @@ A[Lever-outside design = Avalon-Lever/AG/AN] --> B[Lead lining = 9A] --> C[Price
 end
 
 ```
-- **Adon price list:**
+- **Optional price list:**
 
   ![T Series optional price Image](images/Allegion/falcon/adon_price_list.png)
 
@@ -865,6 +872,152 @@ end
 
   ![25 Series optional price Image1](images/Allegion/falcon/optional_price_list_1.png)
   ![25 Series optional price Image2](images/Allegion/falcon/optional_price_list_2.png)
+
+
+#### **B.1.c LCN (`CAN113462_LCN_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
+
+```mermaid
+flowchart TD
+
+
+subgraph Series Selection
+A[Possible Options]
+B[1250] 
+C[1260T]
+D[4000T]
+E[2010]
+F[3130SE]
+G[etc.]
+end
+
+A --> B
+A --> C
+A --> D
+A --> E
+A --> F
+A --> G
+
+```
+- **Product dependent Required Params:**
+
+```mermaid
+graph TB
+
+subgraph Handing selection
+S[Possible Options]
+S --> RH[Right Hand]
+S --> LH[Leftt Hand]
+end
+
+subgraph Device Finish Selection
+Q[Possible Options]
+Q --> |BHMA Number| 616
+Q --> |BHMA Number| 652
+Q --> |BHMA Number| 691
+Q --> |BHMA Number| 690
+Q --> |BHMA Number| 622
+Q --> |BHMA Number| 689
+Q --> R[etc.]
+end
+
+
+subgraph Arm type Selection
+G[Possible Options]
+H[REGARM]
+I[RWPA]
+J[LONG]
+K[etc.]
+end
+
+
+subgraph Model Selection
+A[Possible Options]
+B[1250]
+C[1261]
+D[4003T]
+E[4011]
+F[etc.]
+end
+
+A --> |1250| B
+A --> |1260| C
+A --> |4000T| D
+A --> |4010| E
+A --> F
+
+G --> H
+G --> I
+G --> J
+G --> K
+
+```
+- **Base price chart:**
+
+![1250 Series Base price Image](images/Allegion/LCN/base_price_list.png)
+- **Optional Params:**
+
+```mermaid
+graph TB
+
+
+subgraph Track selection
+N[Possible Options] --> O[BUMP: Track with Bumper]
+N --> P[H: Hold Open Track]
+N --> Q[HBMP: Hold Open Track with Bumper]
+N --> R[LONG: Long Track]
+N --> S[STDSECTRK: Standard Security Track]
+N --> T[STDTRK: Standard Track]
+N --> U[etc.]
+end
+
+subgraph Cover selection
+A[Possible Options] --> B[STD: Standard cover]
+A --> C[DEL: Delay action cylinder]
+A --> D[DPS: DPS cylinder]
+A --> E[LESS: Less cover]
+A --> F[etc.]
+end
+
+subgraph Cylinder selection
+G[Possible Options] --> H[STD: Standard cylinder]
+G --> I[SLIMPC: Slim Plastic cover]
+G --> J[FPC: Full plastic cover]
+G --> K[MC: Metal cover]
+G --> L[LESSCOV: Less cylinder]
+G --> M[etc.]
+end
+
+```
+
+```mermaid
+graph TB
+
+
+G[SRI Primer]
+H[Buy america act]
+I[Flush ceiling application]
+J[Concealed switch]
+P[Possible Options]
+G --> P 
+H --> P 
+I --> P 
+J --> P 
+P --> Y[yes] 
+P --> N[No] 
+
+subgraph Screw Package selection
+A[Possible Options] --> B[WMS: Wood & Machine screws]
+A --> C[Torx: TORX Machine screws]
+A --> D[SPEC: Special screw package]
+A --> E[LESS: Less Screw package]
+A --> F[etc.]
+end
+
+
+```
+- **Optional price chart:**
+
+![1250 Series Options Image](images/Allegion/LCN/adon_price_list.png)
 
 
 
