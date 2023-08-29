@@ -300,7 +300,7 @@ G --> K
 flowchart TD
 
 A[Start] --> B[Model = 70 series heavy-duty]
- --> D[Finish = 605] --> E[US Number = US3] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
+ --> D[Finish 'BHMA/US Number' = 605] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
 - **Different part's Price chart:**
 
@@ -313,40 +313,30 @@ A[Start] --> B[Model = 70 series heavy-duty]
 flowchart TD
 
 
-subgraph Product Category Selection
+subgraph Series Selection
 A[Possible Options]
-B[Locks]
-D[EXit Devices]
-E[Electronics]
-F[etc.]
+B[MA] 
+C[T]
+D[D200]
+E[25]
+F[24]
+G[etc.]
 end
 
+A --> |Locks| B
+A --> |Locks| C
+A --> |Locks| D
+A --> |Exit Devices| E
+A --> |Exit Devices| F
+A --> G
 
-A --> B
-A --> D
-A --> E
-A --> F
 ```
-**1. Locks:**
+**1. Locks [MA series, T Series, X Series, D-200 Series etc.]:**
 - **Product dependent Required Params:**
 
 ```mermaid
 flowchart TD
 
-subgraph Series Selection
-G[Possible Options]
-MA
-T
-X
-D200
-J[etc.]
-end
-
-G --> MA
-G --> T
-G --> X
-G --> D200
-G --> J
 
 subgraph Cylinder Selection
 D[Possible Options]
@@ -358,11 +348,11 @@ BB6
 K[etc.]
 end
 
-subgraph Series + Function Selection
+subgraph Function Selection
 A[Possible Options]
-B[MA101]
-C[MA161]
-I[MA521]
+B[101]
+C[161]
+I[521]
 L[etc.]
 end
 
@@ -630,7 +620,7 @@ end
   ![MA Series optional indicators price Image](images/Allegion/falcon/optional_params_indicator.png)
 
 
-**2. Exit Devices:**
+**2. Exit Devices [25 Series, 24 Series, 2390 Series etc.]:**
 - **Product dependent Required Params:**
 ```mermaid
 graph TB
