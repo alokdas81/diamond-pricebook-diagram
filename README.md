@@ -999,7 +999,83 @@ end
 ```mermaid
 graph TB
 
-subgraph others
+subgraph Stop Type selection
+N[Possible Options] --> O[No Stop]
+N --> P[Positive stop]
+N --> Q[Breakaway stop]
+end
+
+subgraph Voltage selection
+G[Possible Options] --> H[12V]
+G --> I[24V]
+G --> J[115V]
+G --> K[120V]
+G --> L[240V]
+G --> M[etc.]
+end
+
+subgraph Screw Package selection
+A[Possible Options] --> B[WMS: Wood & Machine screws]
+A --> C[Torx: TORX Machine screws]
+A --> D[SPEC: Special screw package]
+A --> E[LESS: Less Screw package]
+A --> F[etc.]
+end
+
+```
+
+```mermaid
+graph TB
+
+
+subgraph Header Bracket selection
+A[Possible Options] --> B[Angle Brackets]
+A --> C[Dress plates]
+end
+
+subgraph Header Length selection
+Q[Possible Options] --> R[33]
+Q --> S[33-1/8]
+Q --> T[33-1/4]
+Q --> U[33-3/8]
+Q --> V[33-1/2]
+Q --> W[33-5/8]
+Q --> X[33-3/4]
+Q --> Y[33-7/8]
+Q --> Z[34]
+Q --> ZZ[etc.]
+end
+
+subgraph Header Type selection
+N[Possible Options] --> O[HDR: Single door]
+N --> P[HDR2: Double door]
+end
+```
+
+```mermaid
+graph TB
+
+
+subgraph Controller selection
+A[Possible Options] --> B[CTRL: Standard Controller]
+A --> C[CTRL2: Standard Controller, pair]
+end
+
+subgraph Spindle center selection
+Q[Possible Options] --> R[2-3/4]
+Q --> S[3-3/4]
+Q --> T[12-1/4]
+end
+
+subgraph Gearbox selection
+N[Possible Options] --> O[MGB: Standard Motor Gearbox]
+N --> P[MGB2: Standard Motor Gearbox, Pair]
+end
+```
+
+```mermaid
+flowchart TD
+
 G[SRI Primer]
 H[Buy america act]
 I[Flush ceiling application]
@@ -1011,16 +1087,6 @@ I --> P
 J --> P 
 P --> Y[yes] 
 P --> N[No] 
-end
-
-subgraph Screw Package selection
-A[Possible Options] --> B[WMS: Wood & Machine screws]
-A --> C[Torx: TORX Machine screws]
-A --> D[SPEC: Special screw package]
-A --> E[LESS: Less Screw package]
-A --> F[etc.]
-end
-
 
 ```
 - **Optional price chart:**
