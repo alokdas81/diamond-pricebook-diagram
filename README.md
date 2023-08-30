@@ -151,9 +151,16 @@ The above structure has been generated depending on the following files.
 # **B. Different paramiter list:**
 Manufaturer wise PDF and their corresponding paramiter list.
 
+- [B.1 Allegion](#B.1)
+  - [B.1.a Glynn Jhonson](#B.1.a)
+  - [B.1.b Falcon](#B.1.b)
+  - [B.1.c LCN](#B.1.c)
+  
+<a id="B.1"></a>
 ## **B.1 Allegion:**
 - Need to follow the common coding format for some parameters.
 ![finish code list](./images/Allegion/finish_codes.png)
+<a id="B.1.a"></a>
 #### **B.1.a Glynn Jhonson (`GJ_Price_Book_12_Feb2023_CAN010061.pdf`):**
 
 ```mermaid
@@ -314,6 +321,7 @@ A[Start] --> B[Model = 70 series heavy-duty]
 ![70 Series Parts Image-1](images/Allegion/glynn_jhonson/part_price1.png)
 ![70 Series Part Image-2](images/Allegion/glynn_jhonson/part_price2.png)
 
+<a id="B.1.b"></a>
 #### **B.1.b Falcon (`CAN110065_FAL_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
 
 ```mermaid
@@ -880,7 +888,7 @@ end
   ![25 Series optional price Image1](images/Allegion/falcon/optional_price_list_1.png)
   ![25 Series optional price Image2](images/Allegion/falcon/optional_price_list_2.png)
 
-
+<a id="B.1.c"></a>
 #### **B.1.c LCN (`CAN113462_LCN_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
 
 ```mermaid
