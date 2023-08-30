@@ -328,14 +328,21 @@ D[D200]
 E[25]
 F[24]
 G[etc.]
+H[Locks]
+I[Exit Devices]
 end
 
-A --> |Locks| B
-A --> |Locks| C
-A --> |Locks| D
-A --> |Exit Devices| E
-A --> |Exit Devices| F
+A --> B
+A --> C
+A --> D
+A --> E
+A --> F
 A --> G
+B --> |Product Category| H
+C --> |Product Category| H
+D --> |Product Category| H
+E --> |Product Category| I
+F --> |Product Category| I
 
 ```
 **1. Locks [MA series, T Series, X Series, D-200 Series etc.]:**
@@ -992,7 +999,7 @@ end
 ```mermaid
 graph TB
 
-
+subgraph others
 G[SRI Primer]
 H[Buy america act]
 I[Flush ceiling application]
@@ -1004,6 +1011,7 @@ I --> P
 J --> P 
 P --> Y[yes] 
 P --> N[No] 
+end
 
 subgraph Screw Package selection
 A[Possible Options] --> B[WMS: Wood & Machine screws]
