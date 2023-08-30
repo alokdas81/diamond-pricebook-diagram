@@ -997,9 +997,9 @@ end
 ```
 
 ```mermaid
-graph TB
+flowchart TD
 
-subgraph Stop Type selection
+subgraph Closer stop Type selection
 N[Possible Options] --> O[No Stop]
 N --> P[Positive stop]
 N --> Q[Breakaway stop]
@@ -1025,7 +1025,7 @@ end
 ```
 
 ```mermaid
-graph TB
+flowchart TD
 
 
 subgraph Header Bracket selection
@@ -1053,7 +1053,7 @@ end
 ```
 
 ```mermaid
-graph TB
+flowchart TD
 
 
 subgraph Controller selection
@@ -1092,6 +1092,8 @@ P --> N[No]
 - **Optional price chart:**
 
 ![1250 Series Options Image](images/Allegion/LCN/adon_price_list.png)
+![2810 Series Options Image](images/Allegion/LCN/adon_price_list2.png)
+![9530 Series Options Image](images/Allegion/LCN/adon_price_list3.png)
 
 
 
