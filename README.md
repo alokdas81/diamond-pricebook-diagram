@@ -5,133 +5,358 @@ Proposed Structure for storing the pricebook information.
 
 ```
 {
-  "category": "hw",
-  "groupDesc": "100 series",
-  "code": "100 Series",
-  "products": [
-    {
-      "desc": "100 Series overhead concealed",
-      "code": "10",
-      "features": [
+    "series-collection":[
         {
-          "desc": "bhma Number/US Number of finish",
-          "code": "finish",
-          "options": [
-            {
-              "desc": "605",
-              "code": "605",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            },
-            {
-              "desc": "606",
-              "code": "606",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            }
-          ],
-          "dependentFetures": [],
+            "manufaturer": "Allegion",
+            "brand": "LCN",
+            "desc": "1000 series",
+            "code": "1000",
+            "UID": "s-1",
+            "features": ["f-0","f-1","f-2","f-3"],
+            "adonFeatures": ["ad-1"] 
         },
         {
-          "desc": "size",
-          "code": "size",
-          "options": [
-            {
-              "desc": "size-2",
-              "code": "2",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            },
-            {
-              "desc": "size-3",
-              "code": "3",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            }
-          ],
-          "dependentFetures": []
-        },
-        {
-          "desc": "Funtion",
-          "code": "Function",
-          "options": [
-            {
-              "desc": "Hold-Open",
-              "code": "H",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            },
-            {
-              "desc": "Stop-Only",
-              "code": "S",
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            }
-          ],
-          "dependentFetures": []
+            "manufaturer": "Allegion",
+            "brand": "GJ",
+            "desc": "70 series",
+            "code": "70",
+            "UID": "s-2",
+            "features": [],
+            "adonFeatures": [] 
         }
-      ],
-      "priceList": [
+    ],
+    "features-collection":[
         {
-          "desc": "10,size 1, Hold-Open, 605 BHMA Finish, US3 US Number",
-          "code": "10-1-H-605-US3",
-          "pricePerQuantity": [
-            {
-                "unit": "Piece",
-                "price": 513
-            }
-          ],
-        },
-        {
-          "desc": "10,size 1,Stop-Only, 605 BHMA Finish, US3 US Number",
-          "code": "10-1-S-605-US3",
-          "pricePerQuantity": [
-            {
-                "unit": "Piece",
-                "price": 513
-            }
-          ]
-        }
-      ],
-      "adonFeatures": [
-        {
-          "desc": "suffix",
-          "code": "suffix",
-          "options": [
-            {
-              "desc": "Stop-Only function for use with Single point hold-open electronic closers.",
-              "code": "SE",
-              "pricePerQuantity": [
+            "desc": "model",
+            "code": "Model",
+            "UID": "f-0",
+            "sn": "0",
+            "availabilityCriteria": [],
+            "options": [
                 {
-                    "unit": "Piece",
-                    "price": 40
+                    "UID": "o-1",
+                    "desc": "1250",
+                    "code": "1250",
+                    "availabilityCriteria": [
+                        {
+                            "sUID": "s-1"
+                        }
+                    ]
+                },
+                {
+                    "UID": "o-2",
+                    "desc": "1260",
+                    "code": "1260",
+                    "availabilityCriteria": [
+                        {
+                            "sUID": "s-1"
+                        }
+                    ]
+                },
+                {
+                    "UID": "o-3",
+                    "desc": "70 Series heavy deuty",
+                    "code": "70",
+                    "availabilityCriteria": [
+                        {
+                            "sUID": "s-2"
+                        }
+                    ]
                 }
-              ],
-              "availabilityCriteria": [],
-              "dependentFeatures": []
-            },
-            {
-              "desc": "Adjustable jamb bracket available on models 103-106 (Allows for field adjustment of Hold-Open 85° - 110°)",
-              "code": "ADJ",
-              "pricePerQuantity": [
+            ]
+        },
+        {
+            "desc": "Arm type",
+            "code": "ARM",
+            "UID": "f-1",
+            "sn": "1",
+            "availabilityCriteria": [],
+            "options": [
                 {
-                    "unit": "Piece",
-                    "price": 92
+                    "UID": "o-1",
+                    "desc": "Long",
+                    "code": "LONG",
+                    "availabilityCriteria": []
+                },
+                {
+                    "UID": "o-2",
+                    "desc": "Heda",
+                    "code": "HEDA",
+                    "availabilityCriteria": []
+                },
+                {
+                    "UID": "o-3",
+                    "desc": "Heda 62 G",
+                    "code": "HEDA62G",
+                    "availabilityCriteria": []
                 }
-              ],
-              "availabilityCriteria": [
+            ]
+        },
+        {
+            "desc": "Device Finish",
+            "code": "Finish",
+            "UID": "f-2",
+            "sn": "2",
+            "availabilityCriteria": [],
+            "options": [
                 {
-                    "featureCode": "size",
-                    "featureOptions": ["3","4","5","6"]
-                }],
-              "dependentFeatures": []
-            }
-          ],
-          "dependentFetures": []
+                    "UID": "o-1",
+                    "desc": "BHMA: 616",
+                    "code": "616",
+                    "availabilityCriteria": [
+                        {
+                            "sUID": "s-1"
+                        }
+                    ]
+                },
+                {
+                    "UID": "o-2",
+                    "desc": "BHMA: 622",
+                    "code": "622",
+                    "availabilityCriteria": []
+                },
+                {
+                    "UID": "o-3",
+                    "desc": "BHMA: 689",
+                    "code": "689",
+                    "availabilityCriteria": []
+                },
+                {
+                    "UID": "o-4",
+                    "desc": "BHMA: 606",
+                    "code": "606",
+                    "availabilityCriteria": [
+                        {
+                            "sUID": "s-2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "desc": "Handing",
+            "code": "Handing",
+            "UID": "f-3",
+            "sn": "3",
+            "availabilityCriteria": [
+                {
+                    "sUID": "s-1",
+                    "Model": "1250",
+                    "ARM": "HEDA"
+                },
+                {
+                    "sUID": "s-1",
+                    "Model": "1260",
+                    "ARM": "HEDA"
+                },
+                {
+                    "sUID": "s-1",
+                    "Model": "1260",
+                    "ARM": "HEDA62G"
+                }
+            ],
+            "options": [
+                {
+                    "UID": "o-1",
+                    "desc": "Right Hand",
+                    "code": "RH",
+                    "availabilityCriteria": [
+                        {
+                            "sUID": "s-1",
+                            "Model": "1260",
+                            "ARM": "HEDA"
+                        }
+                    ]
+                },
+                {
+                    "UID": "o-2",
+                    "desc": "Left Hand",
+                    "code": "LH",
+                    "availabilityCriteria": [
+                        {
+                            "sUID": "s-1",
+                            "Model": "1260",
+                            "ARM": "HEDA62G"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "desc": "function",
+            "code": "Function",
+            "UID": "f-4",
+            "sn": "4",
+            "availabilityCriteria": [],
+            "options": [
+                {
+                    "UID": "o-1",
+                    "desc": "Hold Open",
+                    "code": "H",
+                    "availabilityCriteria": []
+                },
+                {
+                    "UID": "o-2",
+                    "desc": "Stop Only",
+                    "code": "S",
+                    "availabilityCriteria": []
+                }
+            ]
+        },
+        {
+            "desc": "size",
+            "code": "Size",
+            "UID": "f-5",
+            "sn": "5",
+            "availabilityCriteria": [],
+            "options": [
+                {
+                    "UID": "o-1",
+                    "desc": "Size-2",
+                    "code": "2",
+                    "availabilityCriteria": []
+                },
+                {
+                    "UID": "o-2",
+                    "desc": "Size-3",
+                    "code": "3",
+                    "availabilityCriteria": []
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ],
+    "basePrice-collection":[
+        {
+            "code": "1250:LONG:622",
+            "Model": 1250,
+            "ARM": "LONG",
+            "Finish": "622",
+            "pricePerQuantity": [
+              {
+                  "unit": "Foot",
+                  "price": 276
+              }
+            ]
+        },
+        {
+            "code": "1250:LONG:689",
+            "Model": 1250,
+            "ARM": "LONG",
+            "Finish": "689",
+            "pricePerQuantity": [
+              {
+                  "unit": "Foot",
+                  "price": 276
+              }
+            ]
+        },
+        {
+            "code": "1250:HEDA:622:RH",
+            "Model": 1250,
+            "ARM": "HEDA",
+            "Finish": "622",
+            "Heading": "RH",
+            "pricePerQuantity": [
+              {
+                  "unit": "Foot",
+                  "price": 394
+              }
+            ]
+        },
+        {
+            "code": "1250:HEDA:622:LH",
+            "Model": 1250,
+            "ARM": "HEDA",
+            "Finish": "622",
+            "Heading": "LH",
+            "pricePerQuantity": [
+              {
+                  "unit": "Foot",
+                  "price": 394
+              }
+            ]
+        },
+        {
+            "code": "70:606:H:2",
+            "Model": 70,
+            "Finish": "606",
+            "Function": "H",
+            "Size": "2",
+            "pricePerQuantity": [
+              {
+                  "unit": "Piece",
+                  "price": 371
+              }
+            ]
+        }
+    ],
+    "adonFeatures-collection":[
+        {
+            "desc": "Cover",
+            "code": "Cover",
+            "UID": "ad-1",
+            "availabilityCriteria": [
+                {
+                    "sUID": "s-1",
+                    "Model": "1250"
+                },
+                {
+                    "sUID": "s-1",
+                    "Model": "1260"
+                }
+            ],
+            "options": [
+                {
+                    "UID": "o-1",
+                    "desc": "Less cover",
+                    "code": "LESS",
+                    "availabilityCriteria": [],
+                    "pricePerQuantity": [
+                        {
+                            "unit": "Piece",
+                            "price": 0
+                        }
+                    ]
+                },
+                {
+                    "UID": "o-2",
+                    "desc": "Simple plastic Cover",
+                    "code": "SLMIPC",
+                    "availabilityCriteria": [],
+                    "pricePerQuantity": [
+                        {
+                            "unit": "Piece",
+                            "price": 19
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "desc": "Jamb Bracket",
+            "code": "Jamb Bracket",
+            "UID": "ad-2",
+            "availabilityCriteria": [
+                {
+                    "sUID": "s-2"
+                }
+            ],
+            "options": [
+                {
+                    "UID": "o-1",
+                    "desc": "J: standard Jamb Bracket",
+                    "code": "J",
+                    "availabilityCriteria": [],
+                    "pricePerQuantity": [
+                        {
+                            "unit": "Piece",
+                            "price": 83
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
 ```
 
