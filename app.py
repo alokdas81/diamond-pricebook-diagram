@@ -57,6 +57,11 @@ def get_features():
     return jsonify(response)
 
 
+@app.route('/get_baseprice', methods=['POST'])
+def get_baseprice():
+    data = request.json
+    baseprice = db.basePrice.find(data, {'_id' : 0})
+    return jsonify(list(baseprice))
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001, host='0.0.0.0')
