@@ -1,7 +1,7 @@
 # A. Proposed DB Structure
 
 Proposed Structure for storing the pricebook information.
-[Click heare](./pricelistDBStructure.json)
+[Click here](./pricelistDBStructure.json)
 
 The above structure has been generated depending on the following files.
 ###### **Allegion**:
