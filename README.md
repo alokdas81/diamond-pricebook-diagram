@@ -1,7 +1,7 @@
 # A. Proposed DB Structure
 
 Proposed Structure for storing the pricebook information.
-[Click here](./pricelistDBStructure.json)
+[Click here](./data/pricelistDBStructure.json)
 
 The above structure has been generated depending on the following files.
 ###### **Allegion**:
@@ -27,7 +27,7 @@ Manufaturer wise PDF and their corresponding paramiter list.
 <a id="B.1"></a>
 ## **B.1 Allegion:**
 - Need to follow the common coding format for some parameters.
-![finish code list](./images/Allegion/finish_codes.png)
+![finish code list](./data/images/Allegion/finish_codes.png)
 <a id="B.1.a"></a>
 ### **B.1.a Glynn Jhonson (`GJ_Price_Book_12_Feb2023_CAN010061.pdf`):**
 
@@ -132,7 +132,7 @@ H --> I
 
 - **Base Price chart:**
 
-![70/79 Series price Image](images/Allegion/glynn_jhonson/price_list.png)
+![70/79 Series price Image](./data/images/Allegion/glynn_jhonson/price_list.png)
 - **Optional Params:**
 
 ```mermaid
@@ -185,7 +185,7 @@ G --> K
 ```
 - **Optional price chart:**
 
-![70/79 Series Options Image](images/Allegion/glynn_jhonson/adon_price_list.png)
+![70/79 Series Options Image](./data/images/Allegion/glynn_jhonson/adon_price_list.png)
 
 
 - Parts selection criteria
@@ -197,8 +197,8 @@ A[Start] --> B[Model = 70 series heavy-duty]
 ```
 - **Different part's Price chart:**
 
-![70 Series Parts Image-1](images/Allegion/glynn_jhonson/part_price1.png)
-![70 Series Part Image-2](images/Allegion/glynn_jhonson/part_price2.png)
+![70 Series Parts Image-1](./data/images/Allegion/glynn_jhonson/part_price1.png)
+![70 Series Part Image-2](./data/images/Allegion/glynn_jhonson/part_price2.png)
 
 <a id="B.1.b"></a>
 ### **B.1.b Falcon (`CAN110065_FAL_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
@@ -327,7 +327,7 @@ A --> B
 
 - **Base Price chart:**
 
-![MA Series price Image](images/Allegion/falcon/price_list.png)
+![MA Series price Image](./data/images/Allegion/falcon/price_list.png)
 
 
 ```mermaid
@@ -469,7 +469,7 @@ end
 ```
 - **Less component price list:**
 
-![T Series less component price Image](images/Allegion/falcon/less_component_price_list.png)
+![T Series less component price Image](./data/images/Allegion/falcon/less_component_price_list.png)
 - **Optional Params:**
 ```mermaid
 flowchart TD
@@ -514,11 +514,11 @@ end
 ```
 - **Optional price list:**
 
-  ![T Series optional price Image](images/Allegion/falcon/adon_price_list.png)
+  ![T Series optional price Image](./data/images/Allegion/falcon/adon_price_list.png)
 
   Optinal Params indicator
   
-  ![MA Series optional indicators price Image](images/Allegion/falcon/optional_params_indicator.png)
+  ![MA Series optional indicators price Image](./data/images/Allegion/falcon/optional_params_indicator.png)
 
 
 **2. Exit Devices [25 Series, 24 Series, 2390 Series etc.]:**
@@ -580,7 +580,7 @@ end
 ```
 - **Base price chart:**
 
-![25 Series Base price Image](images/Allegion/falcon/exit_device_base_price.png)
+![25 Series Base price Image](./data/images/Allegion/falcon/exit_device_base_price.png)
 - **Optional Params:**
   ```mermaid
   graph TB
@@ -625,8 +625,8 @@ end
   ```
   **Trim price chart:**
 
-  ![25 Series trim price Image1](images/Allegion/falcon/optional_trim_price_1.png)
-  ![25 Series trim price Image2](images/Allegion/falcon/optional_trim_price_2.png)
+  ![25 Series trim price Image1](./data/images/Allegion/falcon/optional_trim_price_1.png)
+  ![25 Series trim price Image2](./data/images/Allegion/falcon/optional_trim_price_2.png)
 
     ```mermaid
     flowchart TD
@@ -644,7 +644,7 @@ end
   ```
   **Strike price chart:**
 
-  ![25 Series strike price Image](images/Allegion/falcon/optional_strike_price.png)
+  ![25 Series strike price Image](./data/images/Allegion/falcon/optional_strike_price.png)
 
   
 
@@ -764,8 +764,8 @@ end
   end
   ```
 
-  ![25 Series optional price Image1](images/Allegion/falcon/optional_price_list_1.png)
-  ![25 Series optional price Image2](images/Allegion/falcon/optional_price_list_2.png)
+  ![25 Series optional price Image1](./data/images/Allegion/falcon/optional_price_list_1.png)
+  ![25 Series optional price Image2](./data/images/Allegion/falcon/optional_price_list_2.png)
 
 <a id="B.1.c"></a>
 ### **B.1.c LCN (`CAN113462_LCN_Price_Book_13_Feb2023_RevJun2023_07-05-23.pdf`):**
@@ -847,7 +847,7 @@ G --> K
 ```
 - **Base price chart:**
 
-![1250 Series Base price Image](images/Allegion/LCN/base_price_list.png)
+![1250 Series Base price Image](./data/images/Allegion/LCN/base_price_list.png)
 - **Optional Params:**
 
 ```mermaid
@@ -978,9 +978,9 @@ P --> N[No]
 ```
 - **Optional price chart:**
 
-![1250 Series Options Image](images/Allegion/LCN/adon_price_list.png)
-![2810 Series Options Image](images/Allegion/LCN/adon_price_list2.png)
-![9530 Series Options Image](images/Allegion/LCN/adon_price_list3.png)
+![1250 Series Options Image](./data/images/Allegion/LCN/adon_price_list.png)
+![2810 Series Options Image](./data/images/Allegion/LCN/adon_price_list2.png)
+![9530 Series Options Image](./data/images/Allegion/LCN/adon_price_list3.png)
 
 
 
