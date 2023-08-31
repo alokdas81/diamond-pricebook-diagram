@@ -268,9 +268,20 @@ H --> I
 - **Optional Params:**
 
 ```mermaid
+flowchart TD
+
+A[Jamb Bracket]
+B[Security Screw]
+C[Sex bolts]
+P[Possible Options]
+A --> P 
+B --> P 
+C --> P 
+P --> Y[yes] 
+P --> N[No] 
+```
+```mermaid
 graph TB
-
-
 
 subgraph Different Parts selection
 G[Possible Options]
@@ -284,12 +295,12 @@ subgraph Optional Finish selection
 F[RAL Powder-Coat finish]
 end
 
-subgraph suffix Selection
+subgraph Door Thikness Selection
 A[Possible Options]
-B[J]
-C[SNB-1]
-D[SNB-2]
-E[SOC]
+B[2]
+C[2-1/4]
+D[2-3/4]
+E[3]
 L[etc.]
 end
 
