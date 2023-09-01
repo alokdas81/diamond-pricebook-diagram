@@ -16,26 +16,44 @@ db = mongo.diamond
 def insert_data():
     data = request.json
 
-    series = data.get("series")
-    db.series.insert_many(series)
+    collections_to_insert = {
+        "series": db.series,
+        "features": db.features,
+        "basePrice": db.basePrice,
+        "adonFeatures": db.adonFeatures
+    }
 
-    features = data.get("features")
-    db.features.insert_many(features)
+    for collection_name, collection in collections_to_insert.items():
+        data_to_insert = data.get(collection_name)
+        if data_to_insert:
+            collection.insert_many(data_to_insert)
 
-    basePrice = data.get("basePrice")
-    db.basePrice.insert_many(basePrice)
-
-    adonFeatures = data.get("adonFeatures")
-    db.adonFeatures.insert_many(adonFeatures)
-
-    # db.my_collection.insert_one(data)
     return jsonify({'message': 'Data inserted successfully'})
 
 
+'''
+Endpoint be link: http://localhost:5001/get_series?manufaturer=Allegion&brand=LCN
+'''
 @app.route('/get_series', methods=['GET'])
 def get_series():
-    data = db.series.find({}, {'_id' : 0})
-    return jsonify(list(data))
+    manufaturer = request.args.get('manufaturer')
+    brand = request.args.get('brand')
+
+    query = {}
+
+    if manufaturer:
+        query['manufaturer'] = manufaturer
+
+    if brand:
+        query['brand'] = brand
+
+    data = list(db.series.find(query, {'_id': 0}))
+
+    # Check if any data is found
+    if len(data) == 0:
+        return jsonify({'message': 'No data found for the given query.'}), 404
+
+    return jsonify(data)
 
 
 @app.route('/get_features', methods=['POST'])
