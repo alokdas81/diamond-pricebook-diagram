@@ -50,10 +50,10 @@ def get_features():
         response["adonFeatures"] = list(adonFeatures)
     if "filteredFeatures" in data:
         filteredFeatures = db.features.find({'UID': {'$in': data['features']},"$or": [{'availabilityCriteria': {"$exists": True,"$size": 0}},{'availabilityCriteria': data['filteredFeatures']}]}, {'_id' : 0})
-        response["filteredFeatures"] = list(filteredFeatures)
+        response["features"] = list(filteredFeatures)
     if "filteredAdonFeatures" in data:
         filteredAdonFeatures = db.adonFeatures.find({'UID': {'$in': data['adonFeatures']},"$or": [{'availabilityCriteria': {"$exists": True,"$size": 0}},{'availabilityCriteria': data['filteredAdonFeatures']}]}, {'_id' : 0})
-        response["filteredAdonFeatures"] = list(filteredAdonFeatures)
+        response["adonFeatures"] = list(filteredAdonFeatures)
     return jsonify(response)
 
 
