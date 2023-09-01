@@ -32,17 +32,17 @@ def insert_data():
 
 
 '''
-Endpoint be link: http://localhost:5001/get_series?manufaturer=Allegion&brand=LCN
+Endpoint be link: http://localhost:5001/get_series?manufacturer=Allegion&brand=LCN
 '''
 @app.route('/get_series', methods=['GET'])
 def get_series():
-    manufaturer = request.args.get('manufaturer')
+    manufacturer = request.args.get('manufacturer')
     brand = request.args.get('brand')
 
     query = {}
 
-    if manufaturer:
-        query['manufaturer'] = manufaturer
+    if manufacturer:
+        query['manufacturer'] = manufacturer
 
     if brand:
         query['brand'] = brand

@@ -1,7 +1,7 @@
 {
     "series-collection":[
         {
-            "manufaturer": "Allegion",
+            "manufacturer": "Allegion",
             "brand": "LCN",
             "desc": "1000 series",
             "code": "1000",
@@ -10,7 +10,7 @@
             "adonFeatures": ["ad-1"] 
         },
         {
-            "manufaturer": "Allegion",
+            "manufacturer": "Allegion",
             "brand": "GJ",
             "desc": "70 series",
             "code": "70",
