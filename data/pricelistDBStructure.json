@@ -15,8 +15,8 @@
             "desc": "70 series",
             "code": "70",
             "UID": "s-2",
-            "features": [],
-            "adonFeatures": [] 
+            "features": ["f-0","f-4","f-5"],
+            "adonFeatures": ["ad-2"] 
         }
     ],
     "features-collection":[
