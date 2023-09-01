@@ -330,11 +330,7 @@
             "desc": "Jamb Bracket",
             "code": "Jamb Bracket",
             "UID": "ad-2",
-            "availabilityCriteria": [
-                {
-                    "sUID": "s-2"
-                }
-            ],
+            "availabilityCriteria": [],
             "options": [
                 {
                     "UID": "o-1",
