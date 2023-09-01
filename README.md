@@ -23,6 +23,8 @@ Manufaturer wise PDF and their corresponding paramiter list.
   - [B.1.a Glynn Jhonson](#B.1.a)
   - [B.1.b Falcon](#B.1.b)
   - [B.1.c LCN](#B.1.c)
+- [B.2 Standard Metal Hardware](#B.2)
+  - [B.2.a Standard Metal Hardware-2021](#B.2.a)
 
 <a id="B.1"></a>
 ## **B.1 Allegion:**
@@ -983,4 +985,120 @@ P --> N[No]
 ![9530 Series Options Image](./data/images/Allegion/LCN/adon_price_list3.png)
 
 
+<a id="B.2"></a>
+## **B.2 Standard Metal Hardware:**
+<a id="B.2.a"></a>
+### **B.2.a Standard Metal Hardware-2021 (`Standard Metal Hardware - 2021 Price Book.pdf`):**
+- Need to follow the common coding format for some parameters.
+![finish code list](./data/images/SMH/finish_codes.png)
 
+
+- **Required Params:**
+
+```mermaid
+flowchart TD
+
+
+subgraph Product Selection
+D[Possible Options]
+D --> E[2007-1]
+D --> F[2007-2]
+D --> H[2007-3]
+D --> K[2412-1]
+D --> L[3115-2]
+D --> M[9005]
+D --> N[C320]
+D --> O[D416]
+D --> P[SMPL830-LS]
+D --> Q[K11A]
+D --> T[etc.]
+end
+```
+
+```mermaid
+flowchart TD
+
+subgraph Finish Selection
+A[Possible Options] --> |BHMA/NBHA| B[605/3]
+A --> |BHMA/NBHA| C[606/4]
+A --> |BHMA/NBHA| D[609/5]
+A --> |BHMA/NBHA| E[613/10B]
+A --> |BHMA/NBHA| F[619/15]
+A --> |BHMA/NBHA| G[671/19]
+A --> H[etc.]
+end
+```
+
+
+- **Base Price chart:**
+
+![Base price Image](./data/images/SMH/base_price.png)
+- **Optional Params:**
+
+```mermaid
+graph TB
+
+
+subgraph Mounting selection
+N[Possible Options] --> O[Standard Single Thru Bolt Mounting for Wood and Metal Doors]
+N --> P[Single Decorative Mounting for Wood and Metal Doors]
+N --> Q[Single Decorative Mounting for Glass Doors]
+N --> R[Back to Back Mounting for Wood and Metal Doors]
+N --> S[Back to Back Mounting for Glass Doors]
+N --> T[Single Concealed Mounting for Metal Doors]
+N --> U[Single Concealed Mounting for Wood Doors]
+end
+```
+
+```mermaid
+flowchart TD
+
+
+subgraph Laser Etching size selection
+A[Possible Options] --> B[0.75'']
+A --> C[1'']
+A --> D[1.25'']
+A --> E[3.5'']
+end
+
+subgraph Laser Etching type selection
+N[Possible Options] --> O[Push or Pull]
+N --> P[Poussez]
+N --> Q[Tirez]
+N --> R[Female Picto]
+N --> S[Male Picto]
+N --> T[Handicap Picto]
+end
+
+```
+
+```mermaid
+flowchart TD
+
+
+subgraph Engraving size selection
+A[Possible Options] --> B[0.75'']
+A --> C[1'']
+A --> D[1.25'']
+A --> E[3.5'']
+end
+
+
+subgraph Engraving Material selection
+F[Possible Options] --> G[Flat Material]
+F --> H[Round Material]
+end
+
+subgraph Engraving type selection
+N[Possible Options] --> O[Push or Pull]
+N --> P[Poussez]
+N --> Q[Tirez]
+N --> R[Female Picto]
+N --> S[Male Picto]
+N --> T[Handicap Picto]
+end
+
+```
+- **Optional price chart:**
+
+![Optional price Image](./data/images/SMH/adon_price.png)
