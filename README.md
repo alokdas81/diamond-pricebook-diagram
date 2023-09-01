@@ -993,13 +993,11 @@ P --> N[No]
 ![finish code list](./data/images/SMH/finish_codes.png)
 
 
-- **Required Params:**
-
 ```mermaid
 flowchart TD
 
 
-subgraph Product Selection
+subgraph Series Selection
 D[Possible Options]
 D --> E[2007-1]
 D --> F[2007-2]
@@ -1014,6 +1012,9 @@ D --> Q[K11A]
 D --> T[etc.]
 end
 ```
+
+- **Required Params:**
+
 
 ```mermaid
 flowchart TD
