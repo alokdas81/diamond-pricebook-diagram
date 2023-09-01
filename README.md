@@ -1054,21 +1054,13 @@ end
 ```mermaid
 flowchart TD
 
-
-subgraph Laser Etching size selection
-A[Possible Options] --> B[0.75'']
-A --> C[1'']
-A --> D[1.25'']
-A --> E[3.5'']
-end
-
-subgraph Laser Etching type selection
-N[Possible Options] --> O[Push or Pull]
-N --> P[Poussez]
-N --> Q[Tirez]
-N --> R[Female Picto]
-N --> S[Male Picto]
-N --> T[Handicap Picto]
+subgraph Laser Etching selection
+N[Possible Options] --> |type X Size| O[Push or Pull X 0.75'']
+N --> |type X Size| P[Push or Pull X 1'']
+N --> |type X Size| Q[Push or Pull X 1.25'']
+N --> |type X Size| R[Poussez X 0.75'']
+N --> |type X Size| S[Poussez X 1'']
+N --> T[etc.]
 end
 
 ```
@@ -1076,27 +1068,14 @@ end
 ```mermaid
 flowchart TD
 
-
-subgraph Engraving size selection
-A[Possible Options] --> B[0.75'']
-A --> C[1'']
-A --> D[1.25'']
-A --> E[3.5'']
-end
-
-
-subgraph Engraving Material selection
-F[Possible Options] --> G[Flat Material]
-F --> H[Round Material]
-end
-
-subgraph Engraving type selection
-N[Possible Options] --> O[Push or Pull]
-N --> P[Poussez]
-N --> Q[Tirez]
-N --> R[Female Picto]
-N --> S[Male Picto]
-N --> T[Handicap Picto]
+subgraph Engraving selection
+N[Possible Options] --> |type X Material X Size| O[Push or Pull X Flat X 0.75'']
+N --> |type X Material X Size| P[Push or Pull X Flat X 1'']
+N --> |type X Material X Size| Q[Push or Pull X Round X 0.75'']
+N --> |type X Material X Size| R[Push or Pull X Round X 1'']
+N --> |type X Material X Size| S[Poussez X Flat X 0.75'']
+N --> |type X Material X Size| T[Poussez X Round X 0.75'']
+N --> U[etc.]
 end
 
 ```
