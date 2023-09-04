@@ -6,6 +6,7 @@
             "desc": "1000 series",
             "code": "1000",
             "UID": "s-1",
+            "isActive": true,
             "features": ["f-0","f-1","f-2","f-3"],
             "adonFeatures": ["ad-1"] 
         },
@@ -15,6 +16,7 @@
             "desc": "70 series",
             "code": "70",
             "UID": "s-2",
+            "isActive": true,
             "features": ["f-0","f-4","f-5"],
             "adonFeatures": ["ad-2"] 
         }
@@ -25,6 +27,7 @@
             "code": "Model",
             "UID": "f-0",
             "sn": "0",
+            "isActive": true,
             "availabilityCriteria": [],
             "options": [
                 {
@@ -64,6 +67,7 @@
             "code": "ARM",
             "UID": "f-1",
             "sn": "1",
+            "isActive": true,
             "availabilityCriteria": [],
             "options": [
                 {
@@ -91,6 +95,7 @@
             "code": "Finish",
             "UID": "f-2",
             "sn": "2",
+            "isActive": true,
             "availabilityCriteria": [],
             "options": [
                 {
@@ -132,6 +137,7 @@
             "code": "Handing",
             "UID": "f-3",
             "sn": "3",
+            "isActive": true,
             "availabilityCriteria": [
                 {
                     "sUID": "s-1",
@@ -181,6 +187,7 @@
             "code": "Function",
             "UID": "f-4",
             "sn": "4",
+            "isActive": true,
             "availabilityCriteria": [],
             "options": [
                 {
@@ -202,6 +209,7 @@
             "code": "Size",
             "UID": "f-5",
             "sn": "5",
+            "isActive": true,
             "availabilityCriteria": [],
             "options": [
                 {
@@ -226,6 +234,7 @@
             "Model": "1250",
             "ARM": "LONG",
             "Finish": "622",
+            "isActive": true,
             "pricePerQuantity": [
               {
                   "unit": "Foot",
@@ -239,6 +248,7 @@
             "Model": "1250",
             "ARM": "LONG",
             "Finish": "689",
+            "isActive": true,
             "pricePerQuantity": [
               {
                   "unit": "Foot",
@@ -253,6 +263,7 @@
             "ARM": "HEDA",
             "Finish": "622",
             "Heading": "RH",
+            "isActive": true,
             "pricePerQuantity": [
               {
                   "unit": "Foot",
@@ -267,6 +278,7 @@
             "ARM": "HEDA",
             "Finish": "622",
             "Heading": "LH",
+            "isActive": true,
             "pricePerQuantity": [
               {
                   "unit": "Foot",
@@ -281,6 +293,7 @@
             "Finish": "606",
             "Function": "H",
             "Size": "2",
+            "isActive": true,
             "pricePerQuantity": [
               {
                   "unit": "Piece",
@@ -294,6 +307,7 @@
             "desc": "Cover",
             "code": "Cover",
             "UID": "ad-1",
+            "isActive": true,
             "availabilityCriteria": [
                 {
                     "sUID": "s-1",
@@ -335,6 +349,7 @@
             "desc": "Jamb Bracket",
             "code": "Jamb Bracket",
             "UID": "ad-2",
+            "isActive": true,
             "availabilityCriteria": [],
             "options": [
                 {
