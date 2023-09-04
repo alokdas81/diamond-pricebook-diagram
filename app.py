@@ -12,7 +12,62 @@ mongo = MongoClient(app.config['MONGO_URI'])
 db = mongo.diamond
 
 
-@app.route('/insert', methods=['POST'])
+@app.route('/insert_manufacturer', methods=['POST'])
+def insert_manufacturer():
+    data = request.json
+    manufactur_list = []
+    for row in data:
+        manufactur_dict = { 
+            "code": row['code'], 
+            "description": row['description'], 
+            "contact": row['contact'] 
+            }
+        manufactur_list.append(manufactur_dict)
+    
+    db.manufacturer.insert_many(manufactur_list)
+
+    return jsonify({'message': 'Data inserted successfully'})
+
+
+@app.route('/get_manufacturer', methods=['GET'])
+def get_manufacturer():
+
+    data = list(db.manufacturer.find({}, {'_id': 0}))
+
+    return jsonify(data)
+
+
+@app.route('/insert_brand', methods=['POST'])
+def insert_brand():
+    data = request.json
+    brand_list = []
+    for row in data:
+        brand_dict = {
+            "code": row['code'], 
+            "description": row['description'], 
+            "contact": row['contact'], 
+            "manufacturer": row['manufacturer']
+            }
+        brand_list.append(brand_dict)
+    db.brand.insert_many(brand_list)
+    
+    return jsonify({'message': 'Data inserted successfully'})
+
+
+@app.route('/get_brand', methods=['GET'])
+def get_brand():
+    manufacturer = request.args.get('manufacturer')
+    query = {}
+
+    if manufacturer:
+        query['manufacturer'] = manufacturer
+
+    data = list(db.brand.find(query, {'_id': 0}))
+
+    return jsonify(data)
+
+
+@app.route('/insert_series', methods=['POST'])
 def insert_data():
     data = request.json
 
@@ -40,7 +95,6 @@ def get_series():
     brand = request.args.get('brand')
 
     query = {}
-
     if manufacturer:
         query['manufacturer'] = manufacturer
 
@@ -49,29 +103,33 @@ def get_series():
 
     data = list(db.series.find(query, {'_id': 0}))
 
-    # Check if any data is found
-    if len(data) == 0:
-        return jsonify({'message': 'No data found for the given query.'}), 404
-
     return jsonify(data)
 
 
-@app.route('/get_features', methods=['POST'])
+@app.route('/get_features', methods=['GET'])
 def get_features():
-    data = request.json
-    response = {}
-    if "features" in data:
-        features = db.features.find({'UID': {'$in': data['features']}}, {'_id' : 0})
-        response["features"] = list(features)
-    if "adonFeatures" in data:
-        adonFeatures = db.adonFeatures.find({'UID': {'$in': data['adonFeatures']}}, {'_id' : 0})
-        response["adonFeatures"] = list(adonFeatures)
-    # if "filteredFeatures" in data:
-    #     filteredFeatures = db.features.find({'UID': {'$in': data['features']},"$or": [{'availabilityCriteria': {"$exists": True,"$size": 0}},{'availabilityCriteria': data['filteredFeatures']}]}, {'_id' : 0})
-    #     response["features"] = list(filteredFeatures)
-    # if "filteredAdonFeatures" in data:
-    #     filteredAdonFeatures = db.adonFeatures.find({'UID': {'$in': data['adonFeatures']},"$or": [{'availabilityCriteria': {"$exists": True,"$size": 0}},{'availabilityCriteria': data['filteredAdonFeatures']}]}, {'_id' : 0})
-    #     response["adonFeatures"] = list(filteredAdonFeatures)
+    series = request.args.get('series')
+    if not series:
+        return jsonify({"error": "series is required"}), 400
+    query = {}
+    if series:
+        query['code'] = series
+
+    data = list(db.series.find(query, {'_id': 0}))
+    response = []
+    for row in data:
+        features = row.get('features', [])
+        adonFeatures = row.get('adonFeatures', [])
+        features_dict = {}
+        if features:
+            features_data = db.features.find({'UID': {'$in': features}}, {'_id' : 0})
+            features_dict["features"] = list(features_data)
+        if adonFeatures:
+            adonFeatures_data = db.adonFeatures.find({'UID': {'$in': adonFeatures}}, {'_id' : 0})
+            features_dict["adonFeatures"] = list(adonFeatures_data)
+
+        response.append(features_dict)
+
     return jsonify(response)
 
 
