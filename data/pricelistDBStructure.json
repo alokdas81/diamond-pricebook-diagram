@@ -34,6 +34,7 @@
                     "UID": "o-1",
                     "desc": "1250",
                     "code": "1250",
+                    "isActive": true,
                     "availabilityCriteria": [
                         {
                             "sUID": "s-1"
@@ -44,6 +45,7 @@
                     "UID": "o-2",
                     "desc": "1260",
                     "code": "1260",
+                    "isActive": true,
                     "availabilityCriteria": [
                         {
                             "sUID": "s-1"
@@ -54,6 +56,7 @@
                     "UID": "o-3",
                     "desc": "70 Series heavy deuty",
                     "code": "70",
+                    "isActive": true,
                     "availabilityCriteria": [
                         {
                             "sUID": "s-2"
@@ -74,18 +77,21 @@
                     "UID": "o-1",
                     "desc": "Long",
                     "code": "LONG",
+                    "isActive": true,
                     "availabilityCriteria": []
                 },
                 {
                     "UID": "o-2",
                     "desc": "Heda",
                     "code": "HEDA",
+                    "isActive": true,
                     "availabilityCriteria": []
                 },
                 {
                     "UID": "o-3",
                     "desc": "Heda 62 G",
                     "code": "HEDA62G",
+                    "isActive": true,
                     "availabilityCriteria": []
                 }
             ]
@@ -102,6 +108,7 @@
                     "UID": "o-1",
                     "desc": "BHMA: 616",
                     "code": "616",
+                    "isActive": true,
                     "availabilityCriteria": [
                         {
                             "sUID": "s-1"
@@ -112,18 +119,21 @@
                     "UID": "o-2",
                     "desc": "BHMA: 622",
                     "code": "622",
+                    "isActive": true,
                     "availabilityCriteria": []
                 },
                 {
                     "UID": "o-3",
                     "desc": "BHMA: 689",
                     "code": "689",
+                    "isActive": true,
                     "availabilityCriteria": []
                 },
                 {
                     "UID": "o-4",
                     "desc": "BHMA: 606",
                     "code": "606",
+                    "isActive": true,
                     "availabilityCriteria": [
                         {
                             "sUID": "s-2"
@@ -160,6 +170,7 @@
                     "UID": "o-1",
                     "desc": "Right Hand",
                     "code": "RH",
+                    "isActive": true,
                     "availabilityCriteria": [
                         {
                             "sUID": "s-1",
@@ -172,6 +183,7 @@
                     "UID": "o-2",
                     "desc": "Left Hand",
                     "code": "LH",
+                    "isActive": true,
                     "availabilityCriteria": [
                         {
                             "sUID": "s-1",
@@ -194,12 +206,14 @@
                     "UID": "o-1",
                     "desc": "Hold Open",
                     "code": "H",
+                    "isActive": true,
                     "availabilityCriteria": []
                 },
                 {
                     "UID": "o-2",
                     "desc": "Stop Only",
                     "code": "S",
+                    "isActive": true,
                     "availabilityCriteria": []
                 }
             ]
@@ -216,12 +230,14 @@
                     "UID": "o-1",
                     "desc": "Size-2",
                     "code": "2",
+                    "isActive": true,
                     "availabilityCriteria": []
                 },
                 {
                     "UID": "o-2",
                     "desc": "Size-3",
                     "code": "3",
+                    "isActive": true,
                     "availabilityCriteria": []
                 }
             ]
@@ -323,6 +339,7 @@
                     "UID": "o-1",
                     "desc": "Less cover",
                     "code": "LESS",
+                    "isActive": true,
                     "availabilityCriteria": [],
                     "pricePerQuantity": [
                         {
@@ -335,6 +352,7 @@
                     "UID": "o-2",
                     "desc": "Simple plastic Cover",
                     "code": "SLMIPC",
+                    "isActive": true,
                     "availabilityCriteria": [],
                     "pricePerQuantity": [
                         {
@@ -356,6 +374,7 @@
                     "UID": "o-1",
                     "desc": "J: standard Jamb Bracket",
                     "code": "J",
+                    "isActive": true,
                     "availabilityCriteria": [],
                     "pricePerQuantity": [
                         {
