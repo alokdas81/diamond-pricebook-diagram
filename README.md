@@ -14,6 +14,11 @@ The above structure has been generated depending on the following files.
 ###### **NGP**:
 `NGP - Price Book 2023.pdf`
 
+###### **Some Constraints to keep in mind:**
+1. Series will be active only when all base price adding will be completed.
+2. fetures/options will be active as soon as they inserted into the DB.
+3. To minimize the complexity, We will features treat as a new entry into the DB. i.e if one feature `model` will be associated with two siries `100 series` and `70 series` then their code will be different.
+4. In backend we will use the `code` for referance and in UI user can see the `desc` as label.
 
 
 # **B. Different paramiter list:**
