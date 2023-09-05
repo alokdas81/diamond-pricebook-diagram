@@ -1040,7 +1040,7 @@ end
 
 ![63 Series Base price Image](./data/images/Allegion/zero/base_price_list.png)
 
-- **Optional Params:**
+- **Product dependant Optional Params:**
 ```mermaid
 flowchart TD
 
@@ -1049,8 +1049,30 @@ B[No Hole/NH]
 P[Possible Options]
 A --> P 
 B --> P 
+C[Light spring] --> P 
+D[Security screw] --> P 
+E[End cap] --> P 
+F[Pull out] --> P 
 P --> Y[yes] 
 P --> N[No] 
+```
+```mermaid
+graph TB
+
+
+subgraph Epoxy selection
+A[Possible Options] --> B[E: Epoxy tread]
+A --> C[EL: Photoluminescent and epoxy tread]
+end
+
+subgraph Expansion shield/Anchors selection
+Q[Possible Options] --> 221
+Q --> 222
+Q --> 223
+Q --> 224
+Q --> 226
+end
+
 ```
 - **Optional price chart:**
 
