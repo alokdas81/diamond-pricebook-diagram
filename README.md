@@ -994,7 +994,7 @@ P --> N[No]
 <a id="B.1.d"></a>
 ### **B.1.d Zero (`CAN110962_Zero_Price_Book_10_Feb2023_RevJun2023_07-05-23.pdf`):**
 
-![Finish chart Image](./data/images/Allegion/Zero/finish_chart.png)
+![Finish chart Image](./data/images/Allegion/zero/finish_chart.png)
 ```mermaid
 flowchart TD
 
