@@ -1143,6 +1143,7 @@ P --> N[No]
 ```
 - **Optional price chart:**
 
+![Adon charges Image](./data/images/Allegion/zero/adon_charges.png)
 ![Adon part charges Image](./data/images/Allegion/zero/adon_part_price.png)
 
 - **Different part's Price chart:**
