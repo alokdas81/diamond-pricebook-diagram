@@ -157,20 +157,6 @@ P --> Y[yes]
 P --> N[No] 
 ```
 ```mermaid
-flowchart TD
-
-A[Door bracket and pin]
-B[Jamb bracket]
-C[Angle jamb bracket kit]
-P[Possible Options]
-A --> P 
-B --> P 
-C --> P 
-G[etc.] 
-P --> Y[yes] 
-P --> N[No] 
-```
-```mermaid
 graph TB
 
 subgraph Optional Finish selection
@@ -191,11 +177,6 @@ A --> C
 A --> D
 A --> E
 A --> L
-
-G --> H
-G --> I
-G --> J
-G --> K
 ```
 - **Optional price chart:**
 
