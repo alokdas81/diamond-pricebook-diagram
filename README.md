@@ -157,15 +157,21 @@ P --> Y[yes]
 P --> N[No] 
 ```
 ```mermaid
-graph TB
+flowchart TD
 
-subgraph Different Parts selection
-G[Possible Options]
-H[Door bracket and pin]
-I[Jamb bracket]
-J[Angle jamb bracket kit]
-K[etc.]
-end
+A[Door bracket and pin]
+B[Jamb bracket]
+C[Angle jamb bracket kit]
+P[Possible Options]
+A --> P 
+B --> P 
+C --> P 
+G[etc.] 
+P --> Y[yes] 
+P --> N[No] 
+```
+```mermaid
+graph TB
 
 subgraph Optional Finish selection
 F[RAL Powder-Coat finish]
@@ -204,6 +210,7 @@ A[Start] --> B[Model = 70 series heavy-duty]
  --> D[Finish 'BHMA/US Number' = 605] --> |Filter out the parts depending on the above selection| F[Possible parts are marked in red color in the following figure \n Note: This list of parts can  be different for different series]
 ```
 - **Different part's Price chart:**
+Parts can be treated as seperate Product.
 
 ![70 Series Parts Image-1](./data/images/Allegion/glynn_jhonson/part_price1.png)
 ![70 Series Part Image-2](./data/images/Allegion/glynn_jhonson/part_price2.png)
@@ -1006,6 +1013,7 @@ C[63]
 D[622]
 E[360]
 F[361]
+J[7350]
 G[etc.]
 H[Thresholds]
 I[Autometic door bottoms]
@@ -1016,6 +1024,7 @@ A --> C --> |Product Category| H
 A --> D --> |Product Category| H
 A --> E --> |Product Category| I
 A --> F --> |Product Category| I
+A --> J --> |Product Category| I
 A --> G
 
 ```
@@ -1036,11 +1045,30 @@ A --> |Desc/Code/BHMA| G[Oil-rubbed bronze/B-ORB/613]
 A --> H[etc.]
 end
 ```
+```mermaid
+flowchart TD
+
+subgraph Length selection
+Q[Possible Options]
+Q --> J[6]
+Q --> S[6-1/8]
+Q --> T[6-1/4]
+Q --> U[6-3/8]
+Q --> V[6-1/2]
+Q --> W[6-5/8]
+Q --> X[6-3/4]
+Q --> Y[6-7/8]
+Q --> Z[7]
+Q --> ZZ[etc.]
+end
+
+```
 - **Base price chart:**
 
 ![63 Series Base price Image](./data/images/Allegion/zero/base_price_list.png)
 
 - **Product dependant Optional Params:**
+
 ```mermaid
 flowchart TD
 
@@ -1049,10 +1077,7 @@ B[No Hole/NH]
 P[Possible Options]
 A --> P 
 B --> P 
-C[Light spring] --> P 
-D[Security screw] --> P 
-E[End cap] --> P 
-F[Pull out] --> P 
+G[etc.] 
 P --> Y[yes] 
 P --> N[No] 
 ```
@@ -1077,6 +1102,73 @@ end
 - **Optional price chart:**
 
 ![Adon charges Image](./data/images/Allegion/zero/adon_charges.png)
+![Adon part charges Image](./data/images/Allegion/zero/adon_part_price.png)
+
+**2. Autometic door bottoms [360 series, 361 Series, 7350 Series etc.]:**
+- **Product dependent Required Params:**
+
+```mermaid
+flowchart TD
+
+subgraph Finish selection
+A[Possible Options]
+A --> |Desc/Code/BHMA| B[Aluminum/A/-]
+A --> |Desc/Code/BHMA| C[Aluminum clear anodized/AA/628]
+A --> |Desc/Code/BHMA| D[Bronze/B/-]
+A --> |Desc/Code/BHMA| E[Aluminum black anodized/BK/711]
+A --> |Desc/Code/BHMA| F[High buff polished bronze/B-POL/-]
+A --> |Desc/Code/BHMA| G[Oil-rubbed bronze/B-ORB/613]
+A --> H[etc.]
+end
+```
+```mermaid
+flowchart TD
+
+subgraph Length selection
+Q[Possible Options]
+Q --> J[6]
+Q --> S[6-1/8]
+Q --> T[6-1/4]
+Q --> U[6-3/8]
+Q --> V[6-1/2]
+Q --> W[6-5/8]
+Q --> X[6-3/4]
+Q --> Y[6-7/8]
+Q --> Z[7]
+Q --> ZZ[etc.]
+end
+
+```
+- **Base price chart:**
+
+![360 Series Base price Image](./data/images/Allegion/zero/auto_baseprice_list.png)
+
+
+- **Product dependant Optional Params:**
+
+```mermaid
+flowchart TD
+
+B[No Hole/NH]
+P[Possible Options]
+B --> P 
+C[Light spring] --> P 
+D[Security screw] --> P 
+E[End Cap] --> P 
+F[Pull out] --> P 
+G[etc.] 
+P --> Y[yes] 
+P --> N[No] 
+```
+- **Optional price chart:**
+
+![Adon part charges Image](./data/images/Allegion/zero/adon_part_price.png)
+
+- **Different part's Price chart:**
+Parts can be treated as seperate Product.
+![Adon part charges Image](./data/images/Allegion/zero/adon_part_price.png)
+![ Parts Image-1](./data/images/Allegion/zero/part_price.png)
+
 <a id="B.2"></a>
 ## **B.2 Standard Metal Hardware:**
 <a id="B.2.a"></a>
