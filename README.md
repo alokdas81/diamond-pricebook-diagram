@@ -24,10 +24,10 @@ The above structure has been generated depending on the following files.
 # **B. Different paramiter list:**
 Manufaturer wise PDF and their corresponding paramiter list.
 
-- **B.1 Allegion:**
-  - [B.1.a Glynn Jhonson](./data/Pricebook/Allegion/glynn_jhonson/README.md)
-  - [B.1.b Falcon](./data/Pricebook/Allegion/falcon/README.md)
-  - [B.1.c LCN](./data/Pricebook/Allegion/LCN/README.md)
-  - [B.1.d Zero](./data/Pricebook/Allegion/zero/README.md)
-- **B.2 Standard Metal Hardware:**
-  - [B.2.a Standard Metal Hardware-2021](./data/Pricebook/SMH/README.md)
+- **B.1 - Allegion:**
+  - [B.1.a - Glynn Jhonson](./data/Pricebook/Allegion/glynn_jhonson/README.md)
+  - [B.1.b - Falcon](./data/Pricebook/Allegion/falcon/README.md)
+  - [B.1.c - LCN](./data/Pricebook/Allegion/LCN/README.md)
+  - [B.1.d - Zero](./data/Pricebook/Allegion/zero/README.md)
+- **B.2 - Standard Metal Hardware:**
+  - [B.2.a - Standard Metal Hardware-2021](./data/Pricebook/SMH/README.md)
