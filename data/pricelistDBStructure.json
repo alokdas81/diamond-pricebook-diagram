@@ -6,8 +6,15 @@
         "desc": "1000 series",
         "seriesCode": "1000",
         "isActive": true,
-        "features": [],
-        "adonFeatures": []
+        "features": [
+          "e02e2063-1ef8-450f-9b5e-62a501f2f4b2",
+          "90d57d74-558a-479f-8566-4622e9634127",
+          "1c442c09-76c0-4f2b-84dd-23ea3d57b5cf",
+          "833edb42-e868-42ce-a77e-45b4a4388d9c"
+        ],
+        "adonFeatures": [
+          "6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0"
+        ]
       },
       {
         "manufacturer": "Allegion",
@@ -15,12 +22,20 @@
         "desc": "70 series",
         "seriesCode": "70",
         "isActive": true,
-        "features": [],
-        "adonFeatures": []
+        "features": [
+          "833edb42-e868-42ce-a77e-45b4a4388d9c",
+          "73c73439-6664-4869-85cf-8a204a61de5b",
+          "90d57d74-558a-479f-8566-4622e9634127",
+          "3b83cae0-77b3-49fc-94c5-6e9024635e30"
+        ],
+        "adonFeatures": [
+          "9dc1b290-cd01-4e11-a732-dee55a44bb4a"
+        ]
       }
     ],
     "features-collection": [
       {
+        "_id": "90d57d74-558a-479f-8566-4622e9634127",
         "desc": "model",
         "featureCode": "Model",
         "isActive": true,
@@ -31,7 +46,7 @@
             "optionCode": "1250",
             "availabilityCriteria": [
               {
-                "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815"
+                "seriesCode": "1000"
               }
             ]
           },
@@ -40,7 +55,7 @@
             "optionCode": "1260",
             "availabilityCriteria": [
               {
-                "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815"
+                "seriesCode": "1000"
               }
             ]
           },
@@ -49,13 +64,14 @@
             "optionCode": "70",
             "availabilityCriteria": [
               {
-                "series_id": "fabfa4e7-538b-433e-abb9-43ec212ccc06"
+                "seriesCode": "70"
               }
             ]
           }
         ]
       },
       {
+        "_id": "1c442c09-76c0-4f2b-84dd-23ea3d57b5cf",
         "desc": "Arm type",
         "featureCode": "ARM",
         "isActive": true,
@@ -79,6 +95,7 @@
         ]
       },
       {
+        "_id": "833edb42-e868-42ce-a77e-45b4a4388d9c",
         "desc": "Device Finish",
         "featureCode": "Finish",
         "isActive": true,
@@ -89,7 +106,7 @@
             "optionCode": "616",
             "availabilityCriteria": [
               {
-                "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815"
+                "seriesCode": "1000"
               }
             ]
           },
@@ -108,29 +125,30 @@
             "optionCode": "606",
             "availabilityCriteria": [
               {
-                "series_id": "fabfa4e7-538b-433e-abb9-43ec212ccc06"
+                "seriesCode": "70"
               }
             ]
           }
         ]
       },
       {
+        "_id": "e02e2063-1ef8-450f-9b5e-62a501f2f4b2",
         "desc": "Handing",
         "featureCode": "Handing",
         "isActive": true,
         "availabilityCriteria": [
           {
-            "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+            "seriesCode": "1000",
             "Model": "1250",
             "ARM": "HEDA"
           },
           {
-            "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+            "seriesCode": "1000",
             "Model": "1260",
             "ARM": "HEDA"
           },
           {
-            "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+            "seriesCode": "1000",
             "Model": "1260",
             "ARM": "HEDA62G"
           }
@@ -141,7 +159,7 @@
             "optionCode": "RH",
             "availabilityCriteria": [
               {
-                "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+                "seriesCode": "1000",
                 "Model": "1260",
                 "ARM": "HEDA"
               }
@@ -152,7 +170,7 @@
             "optionCode": "LH",
             "availabilityCriteria": [
               {
-                "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+                "seriesCode": "1000",
                 "Model": "1260",
                 "ARM": "HEDA62G"
               }
@@ -161,6 +179,7 @@
         ]
       },
       {
+        "_id": "73c73439-6664-4869-85cf-8a204a61de5b",
         "desc": "function",
         "featureCode": "Function",
         "isActive": true,
@@ -179,6 +198,7 @@
         ]
       },
       {
+        "_id": "3b83cae0-77b3-49fc-94c5-6e9024635e30",
         "desc": "size",
         "featureCode": "Size",
         "isActive": true,
@@ -199,7 +219,7 @@
     ],
     "basePrice-collection": [
       {
-        "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+        "seriesCode": "1000",
         "Model": "1250",
         "ARM": "LONG",
         "Finish": "622",
@@ -212,7 +232,7 @@
         ]
       },
       {
-        "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+        "seriesCode": "1000",
         "Model": "1250",
         "ARM": "LONG",
         "Finish": "689",
@@ -225,7 +245,7 @@
         ]
       },
       {
-        "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+        "seriesCode": "1000",
         "Model": "1250",
         "ARM": "HEDA",
         "Finish": "622",
@@ -239,7 +259,7 @@
         ]
       },
       {
-        "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+        "seriesCode": "1000",
         "Model": "1250",
         "ARM": "HEDA",
         "Finish": "622",
@@ -253,7 +273,7 @@
         ]
       },
       {
-        "series_id": "fabfa4e7-538b-433e-abb9-43ec212ccc06",
+        "seriesCode": "70",
         "Model": "70",
         "Finish": "606",
         "Function": "H",
@@ -269,16 +289,17 @@
     ],
     "adonFeatures-collection": [
       {
+        "_id": "6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0",
         "desc": "Cover",
         "adonFeatureCode": "Cover",
         "isActive": true,
         "availabilityCriteria": [
           {
-            "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+            "seriesCode": "1000",
             "Model": "1250"
           },
           {
-            "series_id": "059af0d8-8fdf-4e4f-83c8-a5f902fe6815",
+            "seriesCode": "1000",
             "Model": "1260"
           }
         ],
@@ -308,6 +329,7 @@
         ]
       },
       {
+        "_id": "9dc1b290-cd01-4e11-a732-dee55a44bb4a",
         "desc": "Jamb Bracket",
         "adonFeatureCode": "Jamb Bracket",
         "isActive": true,
