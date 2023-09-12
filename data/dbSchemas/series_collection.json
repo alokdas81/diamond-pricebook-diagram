@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "0b270d1c-e50d-4650-a98b-108dcf498125",
+    "manufacturer": "Allegion",
+    "brand": "LCN",
+    "desc": "1000 series",
+    "seriesCode": "1000",
+    "isActive": true,
+    "features": [
+      "e02e2063-1ef8-450f-9b5e-62a501f2f4b2",
+      "90d57d74-558a-479f-8566-4622e9634127",
+      "1c442c09-76c0-4f2b-84dd-23ea3d57b5cf",
+      "833edb42-e868-42ce-a77e-45b4a4388d9c"
+    ],
+    "adonFeatures": [
+      "6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0"
+    ]
+  },
+  {
+    "_id": "c1b5afc9-a630-48ac-b7a7-0f2dbcd14064",
+    "manufacturer": "Allegion",
+    "brand": "GJ",
+    "desc": "70 series",
+    "seriesCode": "70",
+    "isActive": true,
+    "features": [
+      "833edb42-e868-42ce-a77e-45b4a4388d9c",
+      "73c73439-6664-4869-85cf-8a204a61de5b",
+      "90d57d74-558a-479f-8566-4622e9634127",
+      "3b83cae0-77b3-49fc-94c5-6e9024635e30"
+    ],
+    "adonFeatures": [
+      "9dc1b290-cd01-4e11-a732-dee55a44bb4a"
+    ]
+  }
+]

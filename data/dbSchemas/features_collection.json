@@ -1,0 +1,184 @@
+[
+  {
+    "_id": "90d57d74-558a-479f-8566-4622e9634127",
+    "desc": "model",
+    "featureCode": "Model",
+    "isActive": true,
+    "availabilityCriteria": [],
+    "options": [
+      {
+        "desc": "1250",
+        "optionCode": "1250",
+        "availabilityCriteria": [
+          {
+            "seriesCode": "1000"
+          }
+        ]
+      },
+      {
+        "desc": "1260",
+        "optionCode": "1260",
+        "availabilityCriteria": [
+          {
+            "seriesCode": "1000"
+          }
+        ]
+      },
+      {
+        "desc": "70 Series heavy deuty",
+        "optionCode": "70",
+        "availabilityCriteria": [
+          {
+            "seriesCode": "70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "1c442c09-76c0-4f2b-84dd-23ea3d57b5cf",
+    "desc": "Arm type",
+    "featureCode": "ARM",
+    "isActive": true,
+    "availabilityCriteria": [],
+    "options": [
+      {
+        "desc": "Long",
+        "optionCode": "LONG",
+        "availabilityCriteria": []
+      },
+      {
+        "desc": "Heda",
+        "optionCode": "HEDA",
+        "availabilityCriteria": []
+      },
+      {
+        "desc": "Heda 62 G",
+        "optionCode": "HEDA62G",
+        "availabilityCriteria": []
+      }
+    ]
+  },
+  {
+    "_id": "833edb42-e868-42ce-a77e-45b4a4388d9c",
+    "desc": "Device Finish",
+    "featureCode": "Finish",
+    "isActive": true,
+    "availabilityCriteria": [],
+    "options": [
+      {
+        "desc": "BHMA: 616",
+        "optionCode": "616",
+        "availabilityCriteria": [
+          {
+            "seriesCode": "1000"
+          }
+        ]
+      },
+      {
+        "desc": "BHMA: 622",
+        "optionCode": "622",
+        "availabilityCriteria": []
+      },
+      {
+        "desc": "BHMA: 689",
+        "optionCode": "689",
+        "availabilityCriteria": []
+      },
+      {
+        "desc": "BHMA: 606",
+        "optionCode": "606",
+        "availabilityCriteria": [
+          {
+            "seriesCode": "70"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "e02e2063-1ef8-450f-9b5e-62a501f2f4b2",
+    "desc": "Handing",
+    "featureCode": "Handing",
+    "isActive": true,
+    "availabilityCriteria": [
+      {
+        "seriesCode": "1000",
+        "Model": "1250",
+        "ARM": "HEDA"
+      },
+      {
+        "seriesCode": "1000",
+        "Model": "1260",
+        "ARM": "HEDA"
+      },
+      {
+        "seriesCode": "1000",
+        "Model": "1260",
+        "ARM": "HEDA62G"
+      }
+    ],
+    "options": [
+      {
+        "desc": "Right Hand",
+        "optionCode": "RH",
+        "availabilityCriteria": [
+          {
+            "seriesCode": "1000",
+            "Model": "1260",
+            "ARM": "HEDA"
+          }
+        ]
+      },
+      {
+        "desc": "Left Hand",
+        "optionCode": "LH",
+        "availabilityCriteria": [
+          {
+            "seriesCode": "1000",
+            "Model": "1260",
+            "ARM": "HEDA62G"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "73c73439-6664-4869-85cf-8a204a61de5b",
+    "desc": "function",
+    "featureCode": "Function",
+    "isActive": true,
+    "availabilityCriteria": [],
+    "options": [
+      {
+        "desc": "Hold Open",
+        "optionCode": "H",
+        "availabilityCriteria": []
+      },
+      {
+        "desc": "Stop Only",
+        "optionCode": "S",
+        "availabilityCriteria": []
+      }
+    ]
+  },
+  {
+    "_id": "3b83cae0-77b3-49fc-94c5-6e9024635e30",
+    "desc": "size",
+    "featureCode": "Size",
+    "isActive": true,
+    "availabilityCriteria": [],
+    "options": [
+      {
+        "desc": "Size-2",
+        "optionCode": "2",
+        "availabilityCriteria": []
+      },
+      {
+        "desc": "Size-3",
+        "optionCode": "3",
+        "availabilityCriteria": []
+      }
+    ]
+  }
+]

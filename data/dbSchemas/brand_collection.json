@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "_id": "17fffe4e-3059-4872-b807-b90b1c144e14",
+      "brandCode": "GJ",
+      "contact": "9798989342",
+      "description": "GJ",
+      "manufacturer": "Allegion"
+    },
+    {
+      "_id": "27917a1e-2cb7-40cd-99aa-0822d763edd0",
+      "brandCode": "LCN",
+      "contact": "9798989340",
+      "description": "LCN",
+      "manufacturer": "Allegion"
+    }
+  ]
+}

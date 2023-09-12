@@ -1,0 +1,70 @@
+[
+  {
+    "seriesCode": "1000",
+    "Model": "1250",
+    "ARM": "LONG",
+    "Finish": "622",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Foot",
+        "price": 276
+      }
+    ]
+  },
+  {
+    "seriesCode": "1000",
+    "Model": "1250",
+    "ARM": "LONG",
+    "Finish": "689",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Foot",
+        "price": 276
+      }
+    ]
+  },
+  {
+    "seriesCode": "1000",
+    "Model": "1250",
+    "ARM": "HEDA",
+    "Finish": "622",
+    "Heading": "RH",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Foot",
+        "price": 394
+      }
+    ]
+  },
+  {
+    "seriesCode": "1000",
+    "Model": "1250",
+    "ARM": "HEDA",
+    "Finish": "622",
+    "Heading": "LH",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Foot",
+        "price": 394
+      }
+    ]
+  },
+  {
+    "seriesCode": "70",
+    "Model": "70",
+    "Finish": "606",
+    "Function": "H",
+    "Size": "2",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Piece",
+        "price": 371
+      }
+    ]
+  }
+]

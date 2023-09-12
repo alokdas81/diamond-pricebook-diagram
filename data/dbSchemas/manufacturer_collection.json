@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "1f8f3956-b58f-4b29-8c1a-64d179bc850f",
+    "contact": "6787654567",
+    "description": "Allegion",
+    "manufacturerCode": "Allegion"
+  },
+  {
+    "_id": "a91aabc2-4765-4fe0-9eb7-848d6f387d6f",
+    "contact": "6787654568",
+    "description": "Standard Metal Hardware",
+    "manufacturerCode": "SMH"
+  }
+]

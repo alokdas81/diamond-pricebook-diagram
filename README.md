@@ -1,7 +1,13 @@
 # A. Proposed DB Structure
 
 Proposed Structure for storing the pricebook information.
-[Click here](./data/pricelistDBStructure.json)
+  - [Manufacturer Collection](./data/dbSchemas/manufacturer_collection.json)
+  - [Brand Collection](./data/dbSchemas/brand_collection.json)
+  - [Series Collection](./data/dbSchemas/series_collection.json)
+  - [Feature Collection](./data/dbSchemas/features_collection.json)
+  - [Base price Collection](./data/dbSchemas/base_price_collection.json)
+  - [Adon features Collection](./data/dbSchemas/adon_features_collection.json)
+
 
 The above structure has been generated depending on the following files.
 ###### **Allegion**:

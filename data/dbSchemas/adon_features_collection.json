@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0",
+    "desc": "Cover",
+    "adonFeatureCode": "Cover",
+    "isActive": true,
+    "availabilityCriteria": [
+      {
+        "seriesCode": "1000",
+        "Model": "1250"
+      },
+      {
+        "seriesCode": "1000",
+        "Model": "1260"
+      }
+    ],
+    "options": [
+      {
+        "desc": "Less cover",
+        "optionCode": "LESS",
+        "availabilityCriteria": [],
+        "pricePerQuantity": [
+          {
+            "unit": "Piece",
+            "price": 0
+          }
+        ]
+      },
+      {
+        "desc": "Simple plastic Cover",
+        "optionCode": "SLMIPC",
+        "availabilityCriteria": [],
+        "pricePerQuantity": [
+          {
+            "unit": "Piece",
+            "price": 19
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "9dc1b290-cd01-4e11-a732-dee55a44bb4a",
+    "desc": "Jamb Bracket",
+    "adonFeatureCode": "Jamb Bracket",
+    "isActive": true,
+    "availabilityCriteria": [],
+    "options": [
+      {
+        "desc": "J: standard Jamb Bracket",
+        "optionCode": "J",
+        "availabilityCriteria": [],
+        "pricePerQuantity": [
+          {
+            "unit": "Piece",
+            "price": 83
+          }
+        ]
+      }
+    ]
+  }
+]
