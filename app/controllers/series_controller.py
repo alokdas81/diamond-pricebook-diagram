@@ -23,7 +23,6 @@ def create_data(data):
             if code:
                 series_list = list(collection.find({"seriesCode": code}))
                 if len(series_list) > 0:
-                    row["createdAt"] = get_utc_time()
                     row["updatedAt"] = get_utc_time()
                     collection.update_one({"seriesCode": code}, {"$set": row})
                 else:

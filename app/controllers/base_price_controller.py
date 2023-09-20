@@ -24,7 +24,6 @@ def create_data(data):
             del filter_data["pricePerQuantity"]
             base_price = list(collection.find(filter_data))
             if len(base_price) > 0:
-                row["createdAt"] = get_utc_time()
                 row["updatedAt"] = get_utc_time()
                 collection.update_one(filter_data, {"$set": row})
             else:

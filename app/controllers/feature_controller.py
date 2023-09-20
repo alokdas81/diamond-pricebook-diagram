@@ -38,7 +38,6 @@ def create_data(data):
             feature_code = feature.get("featureCode")
             features_list = list(collection_features.find({"featureCode": feature_code}))
             if len(features_list) > 0:
-                feature["createdAt"] = get_utc_time()
                 feature["updatedAt"] = get_utc_time()
                 collection_features.update_one(
                     {"featureCode": feature_code}, {"$set": feature}

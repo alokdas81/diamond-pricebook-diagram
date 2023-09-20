@@ -43,7 +43,6 @@ def create_data(data):
                 collection_adon_features.find({"adonFeatureCode": adon_feature_code})
             )
             if len(adon_feature_list) > 0:
-                adon_feature["createdAt"] = get_utc_time()
                 adon_feature["updatedAt"] = get_utc_time()
                 collection_adon_features.update_one(
                     {"adonFeatureCode": adon_feature_code}, {"$set": adon_feature}
