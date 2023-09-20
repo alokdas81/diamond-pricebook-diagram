@@ -7,6 +7,7 @@ Proposed Structure for storing the pricebook information.
   - [Feature Collection](./data/dbSchemas/features_collection.json)
   - [Base price Collection](./data/dbSchemas/base_price_collection.json)
   - [Adon features Collection](./data/dbSchemas/adon_features_collection.json)
+  - [Adon price Collection](./data/dbSchemas/adon_price_collection.json)
 
 
 The above structure has been generated depending on the following files.

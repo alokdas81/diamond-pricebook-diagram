@@ -18,24 +18,12 @@
       {
         "desc": "Less cover",
         "optionCode": "LESS",
-        "availabilityCriteria": [],
-        "pricePerQuantity": [
-          {
-            "unit": "Piece",
-            "price": 0
-          }
-        ]
+        "availabilityCriteria": []
       },
       {
         "desc": "Simple plastic Cover",
         "optionCode": "SLMIPC",
-        "availabilityCriteria": [],
-        "pricePerQuantity": [
-          {
-            "unit": "Piece",
-            "price": 19
-          }
-        ]
+        "availabilityCriteria": []
       }
     ]
   },
@@ -49,13 +37,7 @@
       {
         "desc": "J: standard Jamb Bracket",
         "optionCode": "J",
-        "availabilityCriteria": [],
-        "pricePerQuantity": [
-          {
-            "unit": "Piece",
-            "price": 83
-          }
-        ]
+        "availabilityCriteria": []
       }
     ]
   }

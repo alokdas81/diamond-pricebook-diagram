@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Diamond_pricebook",
-    "dateExported": "2023-09-12T09:13:42.267Z",
+    "dateExported": "2023-09-20T13:40:30.788Z",
     "version": "1.1",
     "folders": [
         {
@@ -24,7 +24,7 @@
             "_id": "f0a315a8-5ccb-4051-a63b-addd7b01b8aa",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "4891e8ab-31df-4c7e-8a06-f43b3571fa85",
-            "name": "http://localhost:5001/insert_manufacturer",
+            "name": "insert_manufacturer",
             "url": "http://localhost:5001/insert_manufacturer",
             "method": "POST",
             "sortNum": 10000,
@@ -43,12 +43,12 @@
             "_id": "09bab524-2c6b-414a-b68d-254853ace6bc",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
-            "name": "http://localhost:5001/get_manufacturer",
+            "name": "get_manufacturer",
             "url": "http://localhost:5001/get_manufacturer",
             "method": "GET",
             "sortNum": 10000,
             "created": "2023-09-06T13:17:17.384Z",
-            "modified": "2023-09-06T13:17:17.384Z",
+            "modified": "2023-09-12T17:10:03.400Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -57,7 +57,7 @@
             "_id": "8d3fb2de-df30-4dda-89ae-45e25173e286",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "4891e8ab-31df-4c7e-8a06-f43b3571fa85",
-            "name": "http://localhost:5001/insert_brand",
+            "name": "insert_brand",
             "url": "http://localhost:5001/insert_brand",
             "method": "POST",
             "sortNum": 20000,
@@ -76,7 +76,7 @@
             "_id": "25bd13e5-fe35-4904-a750-ab6733cf375d",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
-            "name": "http://localhost:5001/get_brand",
+            "name": "get_brand",
             "url": "http://localhost:5001/get_brand?manufacturer=Allegion",
             "method": "GET",
             "sortNum": 20000,
@@ -96,12 +96,12 @@
             "_id": "9825688d-7e5d-4e0b-ac0a-93d5a350b481",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
-            "name": "http://localhost:5001/get_series?manufacturer=Allegion&brand=LCN",
+            "name": "get_series",
             "url": "http://localhost:5001/get_series?manufacturer=Allegion&brand=LCN",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-09-06T13:17:17.385Z",
-            "modified": "2023-09-12T09:04:55.765Z",
+            "modified": "2023-09-20T13:38:06.840Z",
             "headers": [],
             "params": [
                 {
@@ -121,12 +121,12 @@
             "_id": "e8a48bda-70bb-4069-9c3a-fd9c8e416bb6",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "4891e8ab-31df-4c7e-8a06-f43b3571fa85",
-            "name": "http://localhost:5001/insert_series",
+            "name": "insert_series",
             "url": "http://localhost:5001/insert_series",
             "method": "POST",
             "sortNum": 30000,
             "created": "2023-09-06T13:17:17.386Z",
-            "modified": "2023-09-12T09:04:24.673Z",
+            "modified": "2023-09-20T13:32:46.249Z",
             "headers": [],
             "params": [],
             "body": {
@@ -140,17 +140,17 @@
             "_id": "55b34b3c-61d0-45be-a291-8b27674de1b8",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
-            "name": "http://localhost:5001/get_features?code=1000",
-            "url": "http://localhost:5001/get_features?seriesCode=70",
+            "name": "get_features",
+            "url": "http://localhost:5001/get_features?seriesCode=1000",
             "method": "GET",
             "sortNum": 32500,
             "created": "2023-09-06T13:17:17.380Z",
-            "modified": "2023-09-12T09:08:05.398Z",
+            "modified": "2023-09-20T13:38:42.790Z",
             "headers": [],
             "params": [
                 {
                     "name": "seriesCode",
-                    "value": "70",
+                    "value": "1000",
                     "isPath": false
                 }
             ],
@@ -160,12 +160,12 @@
             "_id": "a798f2e7-26a4-481d-a346-01094dc237cc",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
-            "name": "http://localhost:5001/get_adonFeatures?code=1000",
+            "name": "get_adonFeatures",
             "url": "http://localhost:5001/get_adonFeatures?seriesCode=1000",
             "method": "GET",
             "sortNum": 35000,
             "created": "2023-09-06T13:17:17.391Z",
-            "modified": "2023-09-12T08:50:50.835Z",
+            "modified": "2023-09-20T13:39:16.366Z",
             "headers": [],
             "params": [
                 {
@@ -180,17 +180,17 @@
             "_id": "e2778413-c46e-4259-9cb6-37d7a31d9db8",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "4891e8ab-31df-4c7e-8a06-f43b3571fa85",
-            "name": "http://localhost:5001/insert_feature",
+            "name": "insert_feature",
             "url": "http://localhost:5001/insert_feature",
             "method": "POST",
             "sortNum": 40000,
             "created": "2023-09-06T13:17:17.378Z",
-            "modified": "2023-09-12T09:08:00.039Z",
+            "modified": "2023-09-20T13:36:09.993Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"seriesCode\": \"70\",\n  \"features\": [\n    {\n      \"_id\": \"90d57d74-558a-479f-8566-4622e9634127\",\n      \"desc\": \"model\",\n      \"featureCode\": \"Model\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [],\n      \"options\": [\n        {\n          \"desc\": \"1250\",\n          \"optionCode\": \"1250\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\"\n            }\n          ]\n        },\n        {\n          \"desc\": \"1260\",\n          \"optionCode\": \"1260\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\"\n            }\n          ]\n        },\n        {\n          \"desc\": \"70 Series heavy deuty\",\n          \"optionCode\": \"70\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"70\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"_id\": \"833edb42-e868-42ce-a77e-45b4a4388d9c\",\n      \"desc\": \"Device Finish\",\n      \"featureCode\": \"Finish\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [],\n      \"options\": [\n        {\n          \"desc\": \"BHMA: 616\",\n          \"optionCode\": \"616\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\"\n            }\n          ]\n        },\n        {\n          \"desc\": \"BHMA: 622\",\n          \"optionCode\": \"622\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"BHMA: 689\",\n          \"optionCode\": \"689\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"BHMA: 606\",\n          \"optionCode\": \"606\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"70\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"_id\": \"73c73439-6664-4869-85cf-8a204a61de5b\",\n      \"desc\": \"function\",\n      \"featureCode\": \"Function\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [],\n      \"options\": [\n        {\n          \"desc\": \"Hold Open\",\n          \"optionCode\": \"H\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"Stop Only\",\n          \"optionCode\": \"S\",\n          \"availabilityCriteria\": []\n        }\n      ]\n    },\n    {\n      \"_id\": \"3b83cae0-77b3-49fc-94c5-6e9024635e30\",\n      \"desc\": \"size\",\n      \"featureCode\": \"Size\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [],\n      \"options\": [\n        {\n          \"desc\": \"Size-2\",\n          \"optionCode\": \"2\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"Size-3\",\n          \"optionCode\": \"3\",\n          \"availabilityCriteria\": []\n        }\n      ]\n    }\n  ]\n}",
+                "raw": "{\n  \"seriesCode\": \"1000\",\n  \"features\": [\n    {\n      \"_id\": \"90d57d74-558a-479f-8566-4622e9634127\",\n      \"desc\": \"model\",\n      \"featureCode\": \"Model\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [],\n      \"options\": [\n        {\n          \"desc\": \"1250\",\n          \"optionCode\": \"1250\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\"\n            }\n          ]\n        },\n        {\n          \"desc\": \"1260\",\n          \"optionCode\": \"1260\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\"\n            }\n          ]\n        },\n        {\n          \"desc\": \"70 Series heavy deuty\",\n          \"optionCode\": \"70\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"70\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"_id\": \"1c442c09-76c0-4f2b-84dd-23ea3d57b5cf\",\n      \"desc\": \"Arm type\",\n      \"featureCode\": \"ARM\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [],\n      \"options\": [\n        {\n          \"desc\": \"Long\",\n          \"optionCode\": \"LONG\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"Heda\",\n          \"optionCode\": \"HEDA\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"Heda 62 G\",\n          \"optionCode\": \"HEDA62G\",\n          \"availabilityCriteria\": []\n        }\n      ]\n    },\n    {\n      \"_id\": \"833edb42-e868-42ce-a77e-45b4a4388d9c\",\n      \"desc\": \"Device Finish\",\n      \"featureCode\": \"Finish\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [],\n      \"options\": [\n        {\n          \"desc\": \"BHMA: 616\",\n          \"optionCode\": \"616\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\"\n            }\n          ]\n        },\n        {\n          \"desc\": \"BHMA: 622\",\n          \"optionCode\": \"622\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"BHMA: 689\",\n          \"optionCode\": \"689\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"BHMA: 606\",\n          \"optionCode\": \"606\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"70\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"_id\": \"e02e2063-1ef8-450f-9b5e-62a501f2f4b2\",\n      \"desc\": \"Handing\",\n      \"featureCode\": \"Handing\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [\n        {\n          \"seriesCode\": \"1000\",\n          \"Model\": \"1250\",\n          \"ARM\": \"HEDA\"\n        },\n        {\n          \"seriesCode\": \"1000\",\n          \"Model\": \"1260\",\n          \"ARM\": \"HEDA\"\n        },\n        {\n          \"seriesCode\": \"1000\",\n          \"Model\": \"1260\",\n          \"ARM\": \"HEDA62G\"\n        }\n      ],\n      \"options\": [\n        {\n          \"desc\": \"Right Hand\",\n          \"optionCode\": \"RH\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\",\n              \"Model\": \"1260\",\n              \"ARM\": \"HEDA\"\n            }\n          ]\n        },\n        {\n          \"desc\": \"Left Hand\",\n          \"optionCode\": \"LH\",\n          \"availabilityCriteria\": [\n            {\n              \"seriesCode\": \"1000\",\n              \"Model\": \"1260\",\n              \"ARM\": \"HEDA62G\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
                 "form": []
             },
             "tests": []
@@ -199,12 +199,12 @@
             "_id": "f12872cf-d6da-4c1f-a010-72bb07ca3884",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
-            "name": "http://localhost:5001/get_baseprice",
+            "name": "get_baseprice",
             "url": "http://localhost:5001/get_baseprice?seriesCode=70&Function=H",
             "method": "GET",
             "sortNum": 45000,
             "created": "2023-09-06T13:17:17.388Z",
-            "modified": "2023-09-12T09:13:04.037Z",
+            "modified": "2023-09-20T13:40:19.214Z",
             "headers": [],
             "params": [
                 {
@@ -224,26 +224,46 @@
             "_id": "1b6871d8-c2d6-455c-a76f-7f57b5bdbac7",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "4891e8ab-31df-4c7e-8a06-f43b3571fa85",
-            "name": "http://localhost:5001/insert_adonFeatures",
+            "name": "insert_adonFeatures",
             "url": "http://localhost:5001/insert_adonFeatures",
             "method": "POST",
             "sortNum": 50000,
             "created": "2023-09-06T13:17:17.389Z",
-            "modified": "2023-09-12T09:10:05.341Z",
+            "modified": "2023-09-20T13:37:35.830Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"seriesCode\": \"1000\",\n  \"adonFeatures\": [\n    {\n      \"_id\": \"6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0\",\n      \"desc\": \"Cover\",\n      \"adonFeatureCode\": \"Cover\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [\n        {\n          \"seriesCode\": \"1000\",\n          \"Model\": \"1250\"\n        },\n        {\n          \"seriesCode\": \"1000\",\n          \"Model\": \"1260\"\n        }\n      ],\n      \"options\": [\n        {\n          \"desc\": \"Less cover\",\n          \"optionCode\": \"LESS\",\n          \"availabilityCriteria\": [],\n          \"pricePerQuantity\": [\n            {\n              \"unit\": \"Piece\",\n              \"price\": 0\n            }\n          ]\n        },\n        {\n          \"desc\": \"Simple plastic Cover\",\n          \"optionCode\": \"SLMIPC\",\n          \"availabilityCriteria\": [],\n          \"pricePerQuantity\": [\n            {\n              \"unit\": \"Piece\",\n              \"price\": 19\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+                "raw": "{\n  \"seriesCode\": \"1000\",\n  \"adonFeatures\": [\n    {\n      \"_id\": \"6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0\",\n      \"desc\": \"Cover\",\n      \"adonFeatureCode\": \"Cover\",\n      \"isActive\": true,\n      \"availabilityCriteria\": [\n        {\n          \"seriesCode\": \"1000\",\n          \"Model\": \"1250\"\n        },\n        {\n          \"seriesCode\": \"1000\",\n          \"Model\": \"1260\"\n        }\n      ],\n      \"options\": [\n        {\n          \"desc\": \"Less cover\",\n          \"optionCode\": \"LESS\",\n          \"availabilityCriteria\": []\n        },\n        {\n          \"desc\": \"Simple plastic Cover\",\n          \"optionCode\": \"SLMIPC\",\n          \"availabilityCriteria\": []\n        }\n      ]\n    }\n  ]\n}",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "4f4809bd-02c7-481d-8711-e5d83e3451e5",
+            "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
+            "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
+            "name": "get_adonprice",
+            "url": "http://localhost:5001/get_adonprice?seriesCode=70",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2023-09-20T12:04:47.843Z",
+            "modified": "2023-09-20T12:05:45.861Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "seriesCode",
+                    "value": "70",
+                    "isPath": false
+                }
+            ],
             "tests": []
         },
         {
             "_id": "6a2dacbf-a46f-4675-8765-ec2f8112a569",
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "4891e8ab-31df-4c7e-8a06-f43b3571fa85",
-            "name": "http://localhost:5001/insert_baseprice",
+            "name": "insert_baseprice",
             "url": "http://localhost:5001/insert_baseprice",
             "method": "POST",
             "sortNum": 60000,
@@ -254,6 +274,25 @@
             "body": {
                 "type": "json",
                 "raw": "[\n  {\n    \"seriesCode\": \"1000\",\n    \"Model\": \"1250\",\n    \"ARM\": \"LONG\",\n    \"Finish\": \"622\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Foot\",\n        \"price\": 276\n      }\n    ]\n  },\n  {\n    \"seriesCode\": \"1000\",\n    \"Model\": \"1250\",\n    \"ARM\": \"LONG\",\n    \"Finish\": \"689\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Foot\",\n        \"price\": 276\n      }\n    ]\n  },\n  {\n    \"seriesCode\": \"1000\",\n    \"Model\": \"1250\",\n    \"ARM\": \"HEDA\",\n    \"Finish\": \"622\",\n    \"Heading\": \"RH\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Foot\",\n        \"price\": 394\n      }\n    ]\n  },\n  {\n    \"seriesCode\": \"1000\",\n    \"Model\": \"1250\",\n    \"ARM\": \"HEDA\",\n    \"Finish\": \"622\",\n    \"Heading\": \"LH\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Foot\",\n        \"price\": 394\n      }\n    ]\n  },\n  {\n    \"seriesCode\": \"70\",\n    \"Model\": \"70\",\n    \"Finish\": \"606\",\n    \"Function\": \"H\",\n    \"Size\": \"2\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Piece\",\n        \"price\": 371\n      }\n    ]\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d3ce25b-7aa3-4bef-9bfe-474364f30d6d",
+            "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
+            "containerId": "4891e8ab-31df-4c7e-8a06-f43b3571fa85",
+            "name": "insert_adonprice",
+            "url": "http://localhost:5001/insert_adonprice",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-09-20T12:00:25.190Z",
+            "modified": "2023-09-20T13:37:47.501Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"seriesCode\": \"1000\",\n    \"Cover\": \"LESS\",\n    \"desc\": \"Less cover\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Piece\",\n        \"price\": 0\n      }\n    ]\n  },\n  {\n    \"seriesCode\": \"1000\",\n    \"desc\": \"Simple plastic Cover\",\n    \"Cover\": \"SLMIPC\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Piece\",\n        \"price\": 19\n      }\n    ]\n  },\n  {\n    \"seriesCode\": \"70\",\n    \"desc\": \"J: standard Jamb Bracket\",\n    \"Jamb Bracket\": \"J\",\n    \"isActive\": true,\n    \"pricePerQuantity\": [\n      {\n        \"unit\": \"Piece\",\n        \"price\": 83\n      }\n    ]\n  }\n]",
                 "form": []
             },
             "tests": []

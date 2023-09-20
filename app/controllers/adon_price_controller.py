@@ -5,7 +5,7 @@ from app.utils import get_utc_time
 def get_data():
     with current_app.app_context():
         db = current_app.mongo_client.diamond
-        collection = db.basePrice
+        collection = db.adonPrice
 
         args = request.args.to_dict(flat=True)
         data = list(collection.find(args))
@@ -17,13 +17,15 @@ def get_data():
 def create_data(data):
     with current_app.app_context():
         db = current_app.mongo_client.diamond
-        collection = db.basePrice
+        collection = db.adonPrice
 
         for row in data:
             filter_data = row.copy()
             del filter_data["pricePerQuantity"]
-            base_price = list(collection.find(filter_data))
-            if len(base_price) > 0:
+            if "desc" in filter_data:
+                del filter_data["desc"]
+            adon_price = list(collection.find(filter_data))
+            if len(adon_price) > 0:
                 row["createdAt"] = get_utc_time()
                 row["updatedAt"] = get_utc_time()
                 collection.update_one(filter_data, {"$set": row})

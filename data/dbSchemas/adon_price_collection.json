@@ -1,0 +1,38 @@
+[
+  {
+    "seriesCode": "1000",
+    "Cover": "LESS",
+    "desc": "Less cover",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Piece",
+        "price": 0
+      }
+    ]
+  },
+  {
+    "seriesCode": "1000",
+    "desc": "Simple plastic Cover",
+    "Cover": "SLMIPC",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Piece",
+        "price": 19
+      }
+    ]
+  },
+  {
+    "seriesCode": "70",
+    "desc": "J: standard Jamb Bracket",
+    "Jamb Bracket": "J",
+    "isActive": true,
+    "pricePerQuantity": [
+      {
+        "unit": "Piece",
+        "price": 83
+      }
+    ]
+  }
+]

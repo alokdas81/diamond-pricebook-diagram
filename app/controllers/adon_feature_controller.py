@@ -1,6 +1,6 @@
 from flask import current_app, jsonify, request
 import uuid
-
+from app.utils import get_utc_time
 
 def get_data():
     with current_app.app_context():
@@ -18,7 +18,8 @@ def get_data():
                 adon_features_data = collection_adon_features.find(
                     {"_id": {"$in": adon_features}}
                 )
-                response.append(list(adon_features_data))
+                row["adonFeatures"] = list(adon_features_data)
+                response.append(row)
 
     response = jsonify({"data": response})
     return response
@@ -42,6 +43,8 @@ def create_data(data):
                 collection_adon_features.find({"adonFeatureCode": adon_feature_code})
             )
             if len(adon_feature_list) > 0:
+                adon_feature["createdAt"] = get_utc_time()
+                adon_feature["updatedAt"] = get_utc_time()
                 collection_adon_features.update_one(
                     {"adonFeatureCode": adon_feature_code}, {"$set": adon_feature}
                 )
@@ -49,6 +52,8 @@ def create_data(data):
             else:
                 if "_id" not in adon_feature:
                     adon_feature["_id"] = str(uuid.uuid4())
+                adon_feature["createdAt"] = get_utc_time()
+                adon_feature["updatedAt"] = get_utc_time()
                 inserted_obj = collection_adon_features.insert_one(adon_feature)
                 adon_features_ids.append(inserted_obj.inserted_id)
 

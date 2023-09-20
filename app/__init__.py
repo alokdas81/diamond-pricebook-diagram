@@ -15,13 +15,15 @@ def create_app(config_filename="config.py"):
     from app.routes.series import series
     from app.routes.feature import feature
     from app.routes.adon_feature import adonFeature
-    from app.routes.baseprice import baseprice
+    from app.routes.base_price import base_price
+    from app.routes.adon_price import adon_price
 
     app.register_blueprint(manufacturer)
     app.register_blueprint(brand)
     app.register_blueprint(series)
     app.register_blueprint(feature)
     app.register_blueprint(adonFeature)
-    app.register_blueprint(baseprice)
+    app.register_blueprint(base_price)
+    app.register_blueprint(adon_price)
 
     return app
