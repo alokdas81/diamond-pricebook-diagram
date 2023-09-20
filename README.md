@@ -32,3 +32,6 @@ Manufaturer wise PDF and their corresponding paramiter list.
   - [B.1.d - Zero](./data/Pricebook/Allegion/zero/README.md)
 - **B.2 - Standard Metal Hardware:**
   - [B.2.a - Standard Metal Hardware-2021](./data/Pricebook/SMH/README.md)
+
+# **C. API list:**
+- For Document regarding List of APIs [Click here](./data/api_doc.md)
