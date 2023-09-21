@@ -17,6 +17,8 @@ def get_data():
             if features:
                 features_data = collection_features.find({"_id": {"$in": features}})
                 row["features"] = list(features_data)
+                if "adonFeatures" in row:
+                    del row["adonFeatures"]
                 response.append(row)
 
     response = jsonify({"data": response})

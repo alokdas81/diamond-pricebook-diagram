@@ -29,9 +29,13 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/manufacturer/get_manufacturer](http://localhost:8000/manufacturer/get_manufacturer)
 
+    **Params**: Pass `manufacturerCode` as query params for filter.
+    
     **Description**: Retrieves manufacturers.
 
     **Response Body**:
+
+    Status Code: <span style="color: lightgreen;">200</span>
     ```
     {
         "data": [
@@ -63,7 +67,7 @@ This documentation provides details for the Diamond Pricebook API collection.
             "brandCode": "GJ",
             "description": "GJ",
             "contact": "9798989342",
-            "manufacturer": "Allegion"
+            "manufacturerCode": "Allegion"
         }
     ]
     ```
@@ -74,22 +78,24 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/brand/get_brand](http://localhost:8000/brand/get_brand)
 
-    **Params**: can pass `manufacturer` as query params for filter.
+    **Params**: Pass `manufacturerCode`<span style="color: red;">*</span> as query params for filter.
 
     **Description**: Retrieves brands based on manufacturer.
 
     **Response Body**:
+
+    Status Code: <span style="color: lightgreen;">200</span>
     ```
     {
         "data": [
                 {
-                "_id": "248f7521-34f6-4c0f-a679-27cc3b709c05",
-                "brandCode": "GJ",
-                "description": "GJ",
-                "contact": "9798989342",
-                "manufacturer": "Allegion",
-                "createdAt": "2023-09-20 13:34:00",
-                "updatedAt": "2023-09-20 13:34:00"
+                    "_id": "248f7521-34f6-4c0f-a679-27cc3b709c05",
+                    "brandCode": "GJ",
+                    "description": "GJ",
+                    "contact": "9798989342",
+                    "manufacturerCode": "Allegion",
+                    "createdAt": "2023-09-20 13:34:00",
+                    "updatedAt": "2023-09-20 13:34:00"
                 }
             ],
         "status": "success"
@@ -108,9 +114,8 @@ This documentation provides details for the Diamond Pricebook API collection.
     ```
     [
         {
-            "_id": "c1b5afc9-a630-48ac-b7a7-0f2dbcd14064",
-            "manufacturer": "Allegion",
-            "brand": "GJ",
+            "manufacturerCode": "Allegion",
+            "brandCode": "GJ",
             "desc": "70 series",
             "seriesCode": "70",
             "isActive": true,
@@ -127,32 +132,34 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/series/get_series](http://localhost:8000/series/get_series)
 
-    **Params**: can pass `manufacturer`,`brand` as query params for filter.
+    **Params**: Pass `manufacturerCode`<span style="color: red;">\*</span>, `brandCode`<span style="color: red;">\*</span> as query params for filter.
 
     **Description**: Retrieves series based on manufacturer and brand.
 
     **Response Body**:
+
+    Status Code: <span style="color: lightgreen;">200</span>
     ```
     {
     "data": [
             {
-            "_id": "0b270d1c-e50d-4650-a98b-108dcf498125",
-            "manufacturer": "Allegion",
-            "brand": "LCN",
-            "desc": "1000 series",
-            "seriesCode": "1000",
-            "isActive": true,
-            "features": [
-                "90d57d74-558a-479f-8566-4622e9634127",
-                "1c442c09-76c0-4f2b-84dd-23ea3d57b5cf",
-                "e02e2063-1ef8-450f-9b5e-62a501f2f4b2",
-                "833edb42-e868-42ce-a77e-45b4a4388d9c"
-            ],
-            "adonFeatures": [
-                "6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0"
-            ],
-            "createdAt": "2023-09-20 13:34:04",
-            "updatedAt": "2023-09-20 13:34:04"
+                "_id": "0b270d1c-e50d-4650-a98b-108dcf498125",
+                "manufacturerCode": "Allegion",
+                "brandCode": "LCN",
+                "desc": "1000 series",
+                "seriesCode": "1000",
+                "isActive": true,
+                "features": [
+                    "90d57d74-558a-479f-8566-4622e9634127",
+                    "1c442c09-76c0-4f2b-84dd-23ea3d57b5cf",
+                    "e02e2063-1ef8-450f-9b5e-62a501f2f4b2",
+                    "833edb42-e868-42ce-a77e-45b4a4388d9c"
+                ],
+                "adonFeatures": [
+                    "6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0"
+                ],
+                "createdAt": "2023-09-20 13:34:04",
+                "updatedAt": "2023-09-20 13:34:04"
             }
         ],
     "status": "success"
@@ -173,7 +180,6 @@ This documentation provides details for the Diamond Pricebook API collection.
     "seriesCode": "1000",
     "features": [
             {
-                "_id": "90d57d74-558a-479f-8566-4622e9634127",
                 "desc": "model",
                 "featureCode": "Model",
                 "isActive": true,
@@ -209,7 +215,6 @@ This documentation provides details for the Diamond Pricebook API collection.
                 ]
             },
             {
-                "_id": "1c442c09-76c0-4f2b-84dd-23ea3d57b5cf",
                 "desc": "Arm type",
                 "featureCode": "ARM",
                 "isActive": true,
@@ -233,7 +238,6 @@ This documentation provides details for the Diamond Pricebook API collection.
                 ]
             },
             {
-                "_id": "833edb42-e868-42ce-a77e-45b4a4388d9c",
                 "desc": "Device Finish",
                 "featureCode": "Finish",
                 "isActive": true,
@@ -270,7 +274,6 @@ This documentation provides details for the Diamond Pricebook API collection.
                 ]
             },
             {
-                "_id": "e02e2063-1ef8-450f-9b5e-62a501f2f4b2",
                 "desc": "Handing",
                 "featureCode": "Handing",
                 "isActive": true,
@@ -326,18 +329,20 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/features/get_features](http://localhost:8000/features/get_features)
 
-    **Params**: Must pass `seriesCode` as query params.
+    **Params**: Pass `seriesCode`<span style="color: red;">*</span> as query params for filter.
 
     **Description**: Retrieves features based on series code.
 
     **Response Body**:
+
+    Status Code: <span style="color: lightgreen;">200</span>
     ```
     {
     "data": [
         {
         "_id": "0b270d1c-e50d-4650-a98b-108dcf498125",
-        "manufacturer": "Allegion",
-        "brand": "LCN",
+        "manufacturerCode": "Allegion",
+        "brandCode": "LCN",
         "desc": "1000 series",
         "seriesCode": "1000",
         "isActive": true,
@@ -520,7 +525,6 @@ This documentation provides details for the Diamond Pricebook API collection.
         "seriesCode": "1000",
         "adonFeatures": [
             {
-                "_id": "6dacdd8f-4466-47cf-bc0f-002a0bcb7ab0",
                 "desc": "Cover",
                 "adonFeatureCode": "Cover",
                 "isActive": true,
@@ -558,18 +562,20 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/adonFeatures/get_adonFeatures](http://localhost:8000/adonFeatures/get_adonFeatures)
 
-    **Params**: Must pass `seriesCode` as query params.
+    **Params**: Pass `seriesCode`<span style="color: red;">*</span> as query params for filter.
 
     **Description**: Retrieves additional features based on series code.
 
     **Response Body**:
+    
+    Status Code: <span style="color: lightgreen;">200</span>
     ```
     {
     "data": [
         {
             "_id": "0b270d1c-e50d-4650-a98b-108dcf498125",
-            "manufacturer": "Allegion",
-            "brand": "LCN",
+            "manufacturerCode": "Allegion",
+            "brandCode": "LCN",
             "desc": "1000 series",
             "seriesCode": "1000",
             "isActive": true,
@@ -653,11 +659,15 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/baseprice/get_baseprice](http://localhost:8000/baseprice/get_baseprice)
 
-    **Params**: Can pass different filter as query params.
+    **Params**: Pass `seriesCode` <span style="color: red;">\*</span> and `different feature codes as key and selected option as value`<span style="color: red;">*</span> as query params for filter.
+
+    ![base price get call sample](./get_base_price.png)
 
     **Description**: Retrieves base prices based on series code and function.
 
     **Response Body**:
+    
+    Status Code: <span style="color: lightgreen;">200</span>
     ```
     {
     "data": [
@@ -716,11 +726,15 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/adonprice/get_adonprice](http://localhost:8000/adonprice/get_adonprice)
 
-    **Params**: Can pass different filter as query params.
+    **Params**: Pass `seriesCode` <span style="color: red;">\*</span> and `different adon feature codes as key and selected option as value`<span style="color: red;">*</span> as query params for filter.
 
+    ![adon price get call sample](./get_adon_price.png)
+    
     **Description**: Retrieves additional prices based on series code.
 
     **Response Body**:
+    
+    Status Code: <span style="color: lightgreen;">200</span>
     ```
     {
     "data": [

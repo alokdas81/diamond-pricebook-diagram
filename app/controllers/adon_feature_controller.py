@@ -19,6 +19,8 @@ def get_data():
                     {"_id": {"$in": adon_features}}
                 )
                 row["adonFeatures"] = list(adon_features_data)
+                if "features" in row:
+                    del row["features"]
                 response.append(row)
 
     response = jsonify({"data": response})

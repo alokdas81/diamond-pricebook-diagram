@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Diamond_pricebook",
-    "dateExported": "2023-09-20T13:40:30.788Z",
+    "dateExported": "2023-09-21T08:24:09.406Z",
     "version": "1.1",
     "folders": [
         {
@@ -62,12 +62,12 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-09-06T13:17:17.381Z",
-            "modified": "2023-09-12T06:48:36.882Z",
+            "modified": "2023-09-21T08:22:46.801Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "[\n  {\n    \"brandCode\": \"GJ\",\n    \"description\": \"GJ\",\n    \"contact\": \"9798989342\",\n    \"manufacturer\": \"Allegion\"\n  },\n  {\n    \"brandCode\": \"LCN\",\n    \"description\": \"LCN\",\n    \"contact\": \"9798989340\",\n    \"manufacturer\": \"Allegion\"\n  }\n]",
+                "raw": "[\n  {\n    \"brandCode\": \"GJ\",\n    \"description\": \"GJ\",\n    \"contact\": \"9798989342\",\n    \"manufacturerCode\": \"Allegion\"\n  },\n  {\n    \"brandCode\": \"LCN\",\n    \"description\": \"LCN\",\n    \"contact\": \"9798989340\",\n    \"manufacturerCode\": \"Allegion\"\n  }\n]",
                 "form": []
             },
             "tests": []
@@ -77,15 +77,15 @@
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
             "name": "get_brand",
-            "url": "http://localhost:5001/get_brand?manufacturer=Allegion",
+            "url": "http://localhost:5001/get_brand?manufacturerCode=Allegion",
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-09-06T13:17:17.382Z",
-            "modified": "2023-09-08T15:38:17.097Z",
+            "modified": "2023-09-21T08:23:07.991Z",
             "headers": [],
             "params": [
                 {
-                    "name": "manufacturer",
+                    "name": "manufacturerCode",
                     "value": "Allegion",
                     "isPath": false
                 }
@@ -97,20 +97,20 @@
             "colId": "68b2cc34-68a1-497a-9ca4-0b2a58dec094",
             "containerId": "0b32b4a0-42f1-4b69-a9f2-6a40d14a96b5",
             "name": "get_series",
-            "url": "http://localhost:5001/get_series?manufacturer=Allegion&brand=LCN",
+            "url": "http://localhost:5001/get_series?manufacturerCode=Allegion&brandCodes=LCN",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-09-06T13:17:17.385Z",
-            "modified": "2023-09-20T13:38:06.840Z",
+            "modified": "2023-09-21T08:23:27.782Z",
             "headers": [],
             "params": [
                 {
-                    "name": "manufacturer",
+                    "name": "manufacturerCode",
                     "value": "Allegion",
                     "isPath": false
                 },
                 {
-                    "name": "brand",
+                    "name": "brandCodes",
                     "value": "LCN",
                     "isPath": false
                 }
@@ -126,12 +126,12 @@
             "method": "POST",
             "sortNum": 30000,
             "created": "2023-09-06T13:17:17.386Z",
-            "modified": "2023-09-20T13:32:46.249Z",
+            "modified": "2023-09-21T08:23:39.053Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "[\n  {\n    \"_id\": \"0b270d1c-e50d-4650-a98b-108dcf498125\",\n    \"manufacturer\": \"Allegion\",\n    \"brand\": \"LCN\",\n    \"desc\": \"1000 series\",\n    \"seriesCode\": \"1000\",\n    \"isActive\": true,\n    \"features\": [],\n    \"adonFeatures\": []\n  },\n  {\n    \"_id\": \"c1b5afc9-a630-48ac-b7a7-0f2dbcd14064\",\n    \"manufacturer\": \"Allegion\",\n    \"brand\": \"GJ\",\n    \"desc\": \"70 series\",\n    \"seriesCode\": \"70\",\n    \"isActive\": true,\n    \"features\": [],\n    \"adonFeatures\": []\n  }\n]",
+                "raw": "[\n  {\n    \"_id\": \"0b270d1c-e50d-4650-a98b-108dcf498125\",\n    \"manufacturerCode\": \"Allegion\",\n    \"brandCodes\": \"LCN\",\n    \"desc\": \"1000 series\",\n    \"seriesCode\": \"1000\",\n    \"isActive\": true,\n    \"features\": [],\n    \"adonFeatures\": []\n  },\n  {\n    \"_id\": \"c1b5afc9-a630-48ac-b7a7-0f2dbcd14064\",\n    \"manufacturerCode\": \"Allegion\",\n    \"brandCodes\": \"GJ\",\n    \"desc\": \"70 series\",\n    \"seriesCode\": \"70\",\n    \"isActive\": true,\n    \"features\": [],\n    \"adonFeatures\": []\n  }\n]",
                 "form": []
             },
             "tests": []
@@ -185,7 +185,7 @@
             "method": "POST",
             "sortNum": 40000,
             "created": "2023-09-06T13:17:17.378Z",
-            "modified": "2023-09-20T13:36:09.993Z",
+            "modified": "2023-09-20T14:47:23.285Z",
             "headers": [],
             "params": [],
             "body": {
