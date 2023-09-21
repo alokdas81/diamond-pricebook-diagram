@@ -78,7 +78,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/brand/get_brand](http://localhost:8000/brand/get_brand)
 
-    **Params**: Pass `manufacturerCode`${\color{red}*}$ as query params for filter.
+    **Params**: Pass `manufacturerCode`$\textcolor{red}{*}$ as query params for filter.
 
     **Description**: Retrieves brands based on manufacturer.
 
@@ -132,7 +132,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/series/get_series](http://localhost:8000/series/get_series)
 
-    **Params**: Pass `manufacturerCode`${\color{red}*}$, `brandCode`${\color{red}*}$ as query params for filter.
+    **Params**: Pass `manufacturerCode`$\textcolor{red}{*}$, `brandCode`$\textcolor{red}{*}$ as query params for filter.
 
     **Description**: Retrieves series based on manufacturer and brand.
 
@@ -329,7 +329,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/features/get_features](http://localhost:8000/features/get_features)
 
-    **Params**: Pass `seriesCode`${\color{red}*}$ as query params for filter.
+    **Params**: Pass `seriesCode`$\textcolor{red}{*}$ as query params for filter.
 
     **Description**: Retrieves features based on series code.
 
@@ -562,7 +562,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/adonFeatures/get_adonFeatures](http://localhost:8000/adonFeatures/get_adonFeatures)
 
-    **Params**: Pass `seriesCode`${\color{red}*}$ as query params for filter.
+    **Params**: Pass `seriesCode`$\textcolor{red}{*}$ as query params for filter.
 
     **Description**: Retrieves additional features based on series code.
 
@@ -659,7 +659,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/baseprice/get_baseprice](http://localhost:8000/baseprice/get_baseprice)
 
-    **Params**: Pass `seriesCode` ${\color{red}*}$ and `different feature codes as key and selected option as value`${\color{red}*}$ as query params for filter.
+    **Params**: Pass `seriesCode` $\textcolor{red}{*}$ and `different feature codes as key and selected option as value`$\textcolor{red}{*}$ as query params for filter.
 
     ![base price get call sample](./get_base_price.png)
 
@@ -726,7 +726,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/adonprice/get_adonprice](http://localhost:8000/adonprice/get_adonprice)
 
-    **Params**: Pass `seriesCode` ${\color{red}*}$ and `different adon feature codes as key and selected option as value`${\color{red}*}$ as query params for filter.
+    **Params**: Pass `seriesCode` $\textcolor{red}{*}$ and `different adon feature codes as key and selected option as value`$\textcolor{red}{*}$ as query params for filter.
 
     ![adon price get call sample](./get_adon_price.png)
     
