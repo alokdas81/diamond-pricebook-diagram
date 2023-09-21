@@ -35,7 +35,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **Response Body**:
 
-    Status Code: <span style="color: lightgreen;">200</span>
+    Status Code:  <font color="lightgreen">200</font>
     ```
     {
         "data": [
@@ -78,13 +78,13 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/brand/get_brand](http://localhost:8000/brand/get_brand)
 
-    **Params**: Pass `manufacturerCode`<span style="color: red;">*</span> as query params for filter.
+    **Params**: Pass `manufacturerCode`<font color="red">*</font> as query params for filter.
 
     **Description**: Retrieves brands based on manufacturer.
 
     **Response Body**:
 
-    Status Code: <span style="color: lightgreen;">200</span>
+    Status Code: <font color="lightgreen">200</font>
     ```
     {
         "data": [
@@ -132,13 +132,13 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/series/get_series](http://localhost:8000/series/get_series)
 
-    **Params**: Pass `manufacturerCode`<span style="color: red;">\*</span>, `brandCode`<span style="color: red;">\*</span> as query params for filter.
+    **Params**: Pass `manufacturerCode`<font color="red">*</font>, `brandCode`<font color="red">\*</font> as query params for filter.
 
     **Description**: Retrieves series based on manufacturer and brand.
 
     **Response Body**:
 
-    Status Code: <span style="color: lightgreen;">200</span>
+    Status Code: <font color="lightgreen">200</font>
     ```
     {
     "data": [
@@ -329,13 +329,13 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/features/get_features](http://localhost:8000/features/get_features)
 
-    **Params**: Pass `seriesCode`<span style="color: red;">*</span> as query params for filter.
+    **Params**: Pass `seriesCode`<font color="red">*</font> as query params for filter.
 
     **Description**: Retrieves features based on series code.
 
     **Response Body**:
 
-    Status Code: <span style="color: lightgreen;">200</span>
+    Status Code: <font color="lightgreen">200</font>
     ```
     {
     "data": [
@@ -562,13 +562,13 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/adonFeatures/get_adonFeatures](http://localhost:8000/adonFeatures/get_adonFeatures)
 
-    **Params**: Pass `seriesCode`<span style="color: red;">*</span> as query params for filter.
+    **Params**: Pass `seriesCode`<font color="red">*</font> as query params for filter.
 
     **Description**: Retrieves additional features based on series code.
 
     **Response Body**:
     
-    Status Code: <span style="color: lightgreen;">200</span>
+    Status Code: <font color="lightgreen">200</font>
     ```
     {
     "data": [
@@ -659,7 +659,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/baseprice/get_baseprice](http://localhost:8000/baseprice/get_baseprice)
 
-    **Params**: Pass `seriesCode` <span style="color: red;">\*</span> and `different feature codes as key and selected option as value`<span style="color: red;">*</span> as query params for filter.
+    **Params**: Pass `seriesCode` <font color="red">\*</font> and `different feature codes as key and selected option as value`<font color="red">*</font> as query params for filter.
 
     ![base price get call sample](./get_base_price.png)
 
@@ -667,7 +667,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **Response Body**:
     
-    Status Code: <span style="color: lightgreen;">200</span>
+    Status Code: <font color="lightgreen">200</font>
     ```
     {
     "data": [
@@ -726,7 +726,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **URL**: [http://localhost:8000/adonprice/get_adonprice](http://localhost:8000/adonprice/get_adonprice)
 
-    **Params**: Pass `seriesCode` <span style="color: red;">\*</span> and `different adon feature codes as key and selected option as value`<span style="color: red;">*</span> as query params for filter.
+    **Params**: Pass `seriesCode` <font color="red">\*</font> and `different adon feature codes as key and selected option as value`<font color="red">*</font> as query params for filter.
 
     ![adon price get call sample](./get_adon_price.png)
     
@@ -734,7 +734,7 @@ This documentation provides details for the Diamond Pricebook API collection.
 
     **Response Body**:
     
-    Status Code: <span style="color: lightgreen;">200</span>
+    Status Code: <font color="lightgreen">200</font>
     ```
     {
     "data": [
